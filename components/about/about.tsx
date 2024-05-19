@@ -50,13 +50,18 @@ export const AboutMe = () => {
             </p>
             <div className="flex flex-wrap items-center gap-8">
               {SkillImages.map((skill) => (
-                <Image
+                <div
                   key={skill.skillSrc}
-                  src={skill.skillSrc}
-                  alt="Skills"
-                  width={50}
-                  height={50}
-                />
+                  className="flex flex-col items-center gap-2"
+                >
+                  <Image
+                    src={skill.skillSrc}
+                    alt="Skills"
+                    width={50}
+                    height={50}
+                  />
+                  <span>{skill.skillTitle}</span>
+                </div>
               ))}
             </div>
             <a href="/CV.pdf" download>

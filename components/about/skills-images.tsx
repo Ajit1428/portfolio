@@ -29,8 +29,16 @@ export const SkillImages = [
     skillTitle: "Typescript",
   },
   {
+    skillSrc: "/images/technologies/Clerk.png",
+    skillTitle: "Clerk",
+  },
+  {
     skillSrc: "/images/technologies/Tailwind CSS.png",
     skillTitle: "Tailwind CSS",
+  },
+  {
+    skillSrc: "/images/technologies/Shadcn.svg",
+    skillTitle: "Shadcn UI",
   },
   {
     skillSrc: "/images/technologies/Material UI.png",

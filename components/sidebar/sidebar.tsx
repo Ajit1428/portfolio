@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const SidebarNav = () => {
   return (
-    <div className="z-[999] fixed left-0 top-[20rem] w-[6rem] h-[10rem]">
+    <div className="z-[999] fixed right-0 top-[20rem] w-[6rem] h-[10rem]">
       <div className="flex flex-col items-center text-[#a6e3a1]  gap-12 border-2 border-[#a6e3a1] bg-[#313244] bg-opacity-80 backdrop-blur rounded-full shadow-lg shadow-black p-10">
         <Link
           target="_blank"

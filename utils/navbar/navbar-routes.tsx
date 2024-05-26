@@ -12,8 +12,8 @@ export const navbarRoutes = [
     hash: "#projects",
   },
   {
-    label: "Experience",
-    hash: "#experience",
+    label: "Experiences",
+    hash: "#experiences",
   },
   {
     label: "Contact",

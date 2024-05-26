@@ -28,7 +28,7 @@ export const AboutMe = () => {
           <Image
             src="/images/about.jpg"
             alt="About section image"
-            width={500}
+            width={600}
             height={500}
             className="rounded-lg"
           />
@@ -65,7 +65,7 @@ export const AboutMe = () => {
               ))}
             </div>
             <a href="/CV.pdf" download>
-              <button className="cursor-pointer flex items-center gap-2 text-[#a6e3a1] transition-all ease-in-out mt-4 text-[1.3rem] border-2 border-[#a6e3a1] px-4 py-2  rounded-lg shadow-lg hover:bg-[#a6e3a1] hover:text-black">
+              <button className="cursor-pointer flex items-center gap-2 text-[#a6e3a1] transition-all ease-in-out duration-300 mt-4 text-[1.3rem] border-2 border-[#a6e3a1] px-4 py-2  rounded-lg shadow-lg hover:bg-[#a6e3a1] hover:text-black">
                 <ArrowDownToLine className="w-6 h-6" /> Download CV
               </button>
             </a>

@@ -1,4 +1,5 @@
 import { AboutMe } from "@/components/about/about";
+import { ExperiencePage } from "@/components/experience/experience";
 import { HomePage } from "@/components/home/home";
 import { ProjectsPage } from "@/components/projects/projects";
 
@@ -13,6 +14,9 @@ export default function Home() {
       </div>
       <div className="border-b-2 border-[#a6e3a1]">
         <ProjectsPage />;
+      </div>
+      <div className="border-b-2 border-[#a6e3a1]">
+        <ExperiencePage />;
       </div>
     </>
   );

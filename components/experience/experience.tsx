@@ -11,7 +11,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { LucideGraduationCap } from "lucide-react";
+import { Landmark, Globe, Terminal } from "lucide-react";
 
 export const ExperiencePage = () => {
   const { ref, inView } = useInView({
@@ -30,41 +30,86 @@ export const ExperiencePage = () => {
       ref={ref}
       className="active px-[10rem] h-auto py-[10rem]"
     >
-      <section className="flex flex-col items-center justify-center gap-[10rem]">
+      <section className="flex flex-col items-center justify-center gap-[6rem]">
         <h2 className="text-[3rem] text-white">Experiences</h2>
         <VerticalTimeline>
           <VerticalTimelineElement
             visible={true}
             contentStyle={{
-              background: "#1e1e2e",
-              color: "white",
-              border: "1px solid #a6e3a1",
-              boxShadow: "1px 2px 10px #a6e3a1",
+              background: "#fab387",
+              color: "black",
+              boxShadow: "1px 2px 10px black",
               textAlign: "left",
-              padding: "1.3rem 2rem",
             }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="2011 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<LucideGraduationCap />}
+            contentArrowStyle={{ borderRight: "7px solid #fab387" }}
+            date="July 2019 - Jun 2021"
+            dateClassName="!font-bold !text-[1.1rem] !text-white"
+            iconStyle={{ background: "#fab387", color: "black" }}
+            icon={<Globe />}
           >
-            <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
-            </p>
+            <div>
+              <h2 className="!text-black !text-[1.4rem] mb-2 font-semibold">
+                Subisu Cablenet Limited
+              </h2>
+              <p className="!text-[1.1rem]">
+                Subisu and wholly the team helped me build up my communication
+                as well as soft skills. Strengthen my networking and technical
+                knowledge. Understand how the organization functions in
+                real-time
+              </p>
+            </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             visible={true}
-            contentStyle={{ background: "red", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="2011 - present"
+            contentStyle={{
+              background: "#89dceb",
+              color: "black",
+              boxShadow: "1px 2px 10px black",
+              textAlign: "left",
+            }}
+            contentArrowStyle={{ borderRight: "7px solid #89dceb" }}
+            date="Dec 2023 - Apr 2024"
+            dateClassName="!font-bold !text-[1.1rem] !text-white"
+            iconStyle={{ background: "#89dceb", color: "black" }}
+            icon={<Landmark />}
           >
-            <h3>Creative Director</h3>
-            <h4>Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
-            </p>
+            <div>
+              <h2 className="!text-black !text-[1.4rem] mb-2 font-semibold">
+                K.B.L. Securities Limited
+              </h2>
+              <p className="!text-[1.1rem]">
+                Besides my expertise in software development, I got to explore
+                the field of brokerage. I experienced the thrills, met new
+                people having completely different mindset and learned about
+                share markets. Automated the workflow, handled the overall
+                networking and maintained their website.
+              </p>
+            </div>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            visible={true}
+            contentStyle={{
+              background: "#f38ba8",
+              color: "black",
+              boxShadow: "1px 2px 10px black",
+              textAlign: "left",
+            }}
+            contentArrowStyle={{ borderRight: "7px solid #f38ba8" }}
+            date="Apr 2024 - Present"
+            dateClassName="!font-bold !text-[1.1rem] !text-white"
+            iconStyle={{ background: "#f38ba8", color: "black" }}
+            icon={<Terminal />}
+          >
+            <div>
+              <h2 className="!text-black !text-[1.4rem] mb-2 font-semibold">
+                Hamro Patro Inc.
+              </h2>
+              <p className="!text-[1.1rem]">
+                Dedicated, focused and determined in becoming a Software
+                Engineer. Thriving in my chosen career path and following my
+                longed dream at Hamro Patro Inc.
+              </p>
+            </div>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </section>

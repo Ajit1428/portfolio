@@ -27,7 +27,7 @@ export const ProjectsPage = () => {
       ref={ref}
       className="active px-[10rem] h-auto py-[10rem]"
     >
-      <section className="flex flex-col items-center justify-center gap-10">
+      <section className="flex flex-col items-center justify-center gap-[6rem]">
         <h2 className="text-[3rem] text-white">Projects</h2>
         <div className="flex items-center gap-4">
           {ProjectButtons.map((button) => (

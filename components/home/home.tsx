@@ -36,9 +36,12 @@ export const HomePage = () => {
             fledge functional Web Application.
           </p>
           <div className="flex items-center mt-6 gap-8">
-            <button className="flex items-center gap-2 text-black text-[1.3rem] bg-[#a6e3a1] border-2 px-4 py-2  rounded-lg shadow-lg  hover:bg-transparent hover:text-white/80 hover:border-2 hover:border-white/80 transition-all ease-in-out duration-300">
+            <a
+              href="#contact"
+              className="cursor-pointer flex items-center gap-2 text-black text-[1.3rem] bg-[#a6e3a1] border-2 px-4 py-2  rounded-lg shadow-lg  hover:bg-transparent hover:text-white/80 hover:border-2 hover:border-white/80 transition-all ease-in-out duration-300"
+            >
               Get in touch <Rss className="w-6 h-6" />
-            </button>
+            </a>
             <div className="flex items-center gap-2 border-b-2 border-[#a6e3a1] py-2 w-fit">
               <span className="border border-white/20 rounded-full bg-green-400 p-[0.35rem]"></span>
               <span className="text-[1.3rem]">Available now</span>

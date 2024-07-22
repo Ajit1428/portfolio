@@ -15,8 +15,8 @@ export const navbarRoutes = [
     label: "Experiences",
     hash: "#experiences",
   },
-  {
-    label: "Contact",
-    hash: "#contact",
-  },
+  // {
+  //   label: "Contact",
+  //   hash: "#contact",
+  // },
 ] as const;

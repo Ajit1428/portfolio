@@ -25,57 +25,31 @@ export const ProjectsPage = () => {
     <div
       id="projects"
       ref={ref}
-      className="active px-[10rem] h-auto py-[10rem]"
+      className="h-auto active px-[159px] py-[10rem]"
     >
-      <section className="flex flex-col items-center justify-center gap-[6rem]">
-        <h2 className="text-[3rem] text-white">Projects</h2>
-        <div className="flex items-center gap-4">
-          {ProjectButtons.map((button) => (
-            <button
-              key={button.label}
-              onClick={() => setIsActiveButton(button.label)}
-              className={cn(
-                "border-2 border-[#a6e3a1] text-lg py-1 px-4 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-white/80  hover:bg-[#a6e3a1] hover:text-black",
-                isActiveButton === button.label &&
-                  "bg-[#a6e3a1] text-black hover:bg-transparent hover:text-white/80 hover:border-white/80",
-              )}
-            >
-              {button.label}
-            </button>
-          ))}
+      <section className="flex flex-col">
+        <div className="flex flex-col items-center justify-center gap-[50px] ">
+          <h2 className="text-[42px] font-bold text-white">Projects</h2>
+          <div className="flex items-center gap-[59px]">
+            {ProjectButtons.map((button) => (
+              <button
+                key={button.label}
+                onClick={() => setIsActiveButton(button.label)}
+                className={cn(
+                  "border-2 border-[#a6e3a1] text-lg py-1 px-4 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-white/80  hover:bg-[#a6e3a1] hover:text-black",
+                  isActiveButton === button.label &&
+                    "bg-[#a6e3a1] text-black hover:bg-transparent hover:text-white/80 hover:border-white/80",
+                )}
+              >
+                {button.label}
+              </button>
+            ))}
+          </div>
         </div>
-        <div className="grid grid-cols-2 gap-20 mt-10">
+        <div className="grid grid-cols-2 gap-20 mt-24">
           {(isActiveButton === "Fullstack" ||
             isActiveButton === "All Projects") && (
             <>
-              <ProjectSection
-                projectImageUrl="/images/projects/KBSL.png"
-                title="K.B.L. Securities Limited CMS"
-                description="A simple CMS developed for K.B.L Securities Limited, requested technologies were used and it's one of my on-going project."
-                technologies={[
-                  {
-                    technologyImageUrl: "/images/technologies/Next.js.png",
-                    technologyTitle: "Nextjs",
-                  },
-                  {
-                    technologyImageUrl: "/images/technologies/Typescript.png",
-                    technologyTitle: "Typescript",
-                  },
-                  {
-                    technologyImageUrl: "/images/technologies/MongoDB.png",
-                    technologyTitle: "MongoDB",
-                  },
-                  {
-                    technologyImageUrl: "/images/technologies/Clerk.png",
-                    technologyTitle: "Clerk",
-                  },
-                  {
-                    technologyImageUrl: "/images/technologies/Shadcn.svg",
-                    technologyTitle: "Shadcn UI",
-                  },
-                ]}
-                githubLink="https://github.com/Ajit1428/kbl-securities-kumari-bank"
-              />
               <ProjectSection
                 projectImageUrl="/images/projects/Ecommerce.png"
                 title="MERN Ecommerce"
@@ -83,30 +57,47 @@ export const ProjectsPage = () => {
                 technologies={[
                   {
                     technologyImageUrl: "/images/technologies/React.png",
-                    technologyTitle: "React",
                   },
                   {
                     technologyImageUrl: "/images/technologies/Node.js.png",
-                    technologyTitle: "Node.js",
                   },
                   {
                     technologyImageUrl: "/images/technologies/Expressjs.png",
-                    technologyTitle: "Express.js",
                   },
                   {
                     technologyImageUrl: "/images/technologies/JS.png",
-                    technologyTitle: "Javascript",
                   },
                   {
                     technologyImageUrl: "/images/technologies/MongoDB.png",
-                    technologyTitle: "MongoDB",
                   },
                   {
                     technologyImageUrl: "/images/technologies/CSS3.png",
-                    technologyTitle: "CSS",
                   },
                 ]}
                 githubLink="https://github.com/Ajit1428/Ecommerce"
+              />
+              <ProjectSection
+                projectImageUrl="/images/projects/KBSL.png"
+                title="CMS"
+                description="A simple CMS developed for K.B.L Securities Limited, requested technologies were used and it's one of my on-going project."
+                technologies={[
+                  {
+                    technologyImageUrl: "/images/technologies/Next.js.png",
+                  },
+                  {
+                    technologyImageUrl: "/images/technologies/Typescript.png",
+                  },
+                  {
+                    technologyImageUrl: "/images/technologies/MongoDB.png",
+                  },
+                  {
+                    technologyImageUrl: "/images/technologies/Clerk.png",
+                  },
+                  {
+                    technologyImageUrl: "/images/technologies/Shadcn.svg",
+                  },
+                ]}
+                githubLink="https://github.com/Ajit1428/kbl-securities-kumari-bank"
               />
             </>
           )}
@@ -120,27 +111,21 @@ export const ProjectsPage = () => {
                 technologies={[
                   {
                     technologyImageUrl: "/images/technologies/Svelte.png",
-                    technologyTitle: "Svelte",
                   },
                   {
                     technologyImageUrl: "/images/technologies/Typescript.png",
-                    technologyTitle: "Typescript",
                   },
                   {
                     technologyImageUrl: "/images/technologies/JS.png",
-                    technologyTitle: "Javascript",
                   },
                   {
                     technologyImageUrl: "/images/technologies/Clerk.png",
-                    technologyTitle: "Clerk",
                   },
                   {
                     technologyImageUrl: "/images/technologies/Material UI.png",
-                    technologyTitle: "Material UI",
                   },
                   {
                     technologyImageUrl: "/images/technologies/Tailwind CSS.png",
-                    technologyTitle: "Tailwind CSS",
                   },
                 ]}
                 githubLink="https://github.com/Ajit1428/svelte-simple-mini-food-recipe"
@@ -152,15 +137,12 @@ export const ProjectsPage = () => {
                 technologies={[
                   {
                     technologyImageUrl: "/images/technologies/React.png",
-                    technologyTitle: "React",
                   },
                   {
                     technologyImageUrl: "/images/technologies/JS.png",
-                    technologyTitle: "Javascript",
                   },
                   {
                     technologyImageUrl: "/images/technologies/Tailwind CSS.png",
-                    technologyTitle: "Tailwind CSS",
                   },
                 ]}
                 githubLink="https://github.com/Ajit1428/pwa-react-weather"
@@ -177,19 +159,15 @@ export const ProjectsPage = () => {
               technologies={[
                 {
                   technologyImageUrl: "/images/technologies/Arch Linux.png",
-                  technologyTitle: "Arch",
                 },
                 {
                   technologyImageUrl: "/images/technologies/Hyprland.png",
-                  technologyTitle: "Hyprland",
                 },
                 {
                   technologyImageUrl: "/images/technologies/Lua.png",
-                  technologyTitle: "Lua",
                 },
                 {
                   technologyImageUrl: "/images/technologies/Vim.png",
-                  technologyTitle: "Neovim",
                 },
               ]}
               githubLink="https://github.com/Ajit1428/dotfiles"

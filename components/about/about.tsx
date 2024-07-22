@@ -23,23 +23,27 @@ export const AboutMe = () => {
   }, [inView, setIsActive]);
   return (
     <>
-      <div id="about" ref={ref} className="py-[16rem] px-[10rem] h-screen">
-        <section className="flex item-center justify-center gap-[10rem] ">
+      <div
+        id="about"
+        ref={ref}
+        className="w-screen flex items-center justify-center active mt-[7rem] px-10 pb-10 xl:pb-0 xl:h-screen xl:mt-[2rem] xl:px-[208px] "
+      >
+        <section className="flex flex-col-reverse items-center justify-center gap-20 xl:gap-[10rem] xl:flex-row">
           <Image
+            className="rounded-lg w-[300px] h-[300px] xl:w-[608px] xl:h-[655px]"
             src="/images/about.jpg"
             alt="About section image"
-            width={600}
-            height={500}
-            className="rounded-lg"
+            width={508}
+            height={555}
           />
-          <div className="flex flex-col items-start text-white gap-10 pr-[10rem] group">
-            <h2 className="relative text-[2.5rem] mb-4">
+          <div className="flex flex-col items-start text-white gap-[1.4rem] group">
+            <h2 className="relative text-[30px] font-bold mb-4 xl:text-[42px]">
               About Me
-              <span className="absolute text-sm font-semibold -bottom-3 left-[5.9rem] w-full text-[#a6e3a1]">
-                — Who am I?
+              <span className="absolute text-[12px] font-semibold -bottom-3 left-[3.7rem] xl:left-[7.2rem]  w-full text-[#a6e3a1]">
+                —- Who am I?
               </span>
             </h2>
-            <p className="text-[1.3rem]">
+            <p className="text-[18px] text-wrap xl:text-[22px]">
               I am currently working as an Intern at Hamro Patro Inc. I have a
               keen interest in Fullstack development. My goal is to use my
               expertise in building exciting and functional user interfaces.
@@ -48,26 +52,33 @@ export const AboutMe = () => {
               software solutions. The following are tech stacks that I use
               regularly:
             </p>
-            <div className="flex flex-wrap items-center gap-8">
+            <div className="grid grid-cols-4 items-center gap-4 xl:grid-cols-8">
               {SkillImages.map((skill) => (
                 <div
                   key={skill.skillSrc}
-                  className="flex flex-col items-center gap-2"
+                  className="flex flex-col items-center gap-2 pt-4"
                 >
                   <Image
                     src={skill.skillSrc}
                     alt="Skills"
-                    width={50}
-                    height={50}
+                    width={40}
+                    height={40}
+                    className="w-[40px] h-[40px]"
                   />
-                  <span>{skill.skillTitle}</span>
+                  <span className="text-[16px] text-center">
+                    {skill.skillTitle}
+                  </span>
                 </div>
               ))}
             </div>
-            <a href="/CV.pdf" download>
-              <button className="cursor-pointer flex items-center gap-2 text-[#a6e3a1] transition-all ease-in-out duration-300 mt-4 text-[1.3rem] border-2 border-[#a6e3a1] px-4 py-2  rounded-lg shadow-lg hover:bg-[#a6e3a1] hover:text-black">
+            <a
+              href="/CV.pdf"
+              download
+              className="w-full flex justify-center items-center xl:justify-normal"
+            >
+              <span className="flex items-center gap-2 text-[#a6e3a1] text-[16px] transition-all ease-in-out duration-300 mt-4 border-2 border-[#a6e3a1] px-4 py-2  rounded-lg shadow-lg hover:bg-[#a6e3a1] hover:text-black cursor-pointer xl:text-[22px]">
                 <ArrowDownToLine className="w-6 h-6" /> Download CV
-              </button>
+              </span>
             </a>
           </div>
         </section>

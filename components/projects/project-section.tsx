@@ -9,7 +9,6 @@ type ProjectSectionType = {
   description: string;
   technologies: {
     technologyImageUrl: string;
-    technologyTitle: string;
   }[];
   githubLink: string;
 };
@@ -22,23 +21,23 @@ export const ProjectSection = ({
   githubLink,
 }: ProjectSectionType) => {
   return (
-    <div className="flex flex-col gap-[2rem] bg-[#26313F] border-[#26313F] shadow-lg shadow-black/40 rounded-lg hover:cursor-pointer hover:shadow-xl hover:scale-105 transition-all">
+    <div className="flex flex-col w-[750px] h-[830px] gap-[25px] bg-[#26313F] border-[#26313F] shadow-lg shadow-black/40 rounded-lg hover:cursor-pointer hover:shadow-xl hover:scale-105 transition-all">
       <Image
         src={projectImageUrl}
         alt="Project Screenshot"
-        width={800}
-        height={800}
-        className="rounded-t-xl"
+        width={764}
+        height={300}
+        className="rounded-t-xl h-[300px]"
       />
-      <div className="flex flex-col items-center justify-center gap-8 px-32 pb-8">
-        <h2 className="text-center text-[#a6e3a1] font-bold text-[1.8rem] border-2 border-[#a6e3a1] p-4 rounded-full">
+      <div className="flex flex-col items-center justify-center gap-[30px] px-20 pb-8">
+        <h2 className="text-center text-[#a6e3a1] font-bold text-[42px]">
           {title}
         </h2>
-        <p className="text-white text-[1.4rem]">{description}</p>
-        <h4 className="text-center text-[#a6e3a1] font-semibold text-[1.2rem] border-2 border-[#a6e3a1] rounded-full p-4">
+        <p className="text-white text-[22px]">{description}</p>
+        <h4 className="text-center text-[#a6e3a1] font-semibold text-[22px]">
           Technologies Used
         </h4>
-        <div className="flex items-center gap-6 mt-4">
+        <div className="flex items-center gap-[25px] mt-4">
           {technologies.map((src) => (
             <div
               key={src.technologyImageUrl}
@@ -46,21 +45,21 @@ export const ProjectSection = ({
             >
               <Image
                 src={src.technologyImageUrl}
-                alt={src.technologyTitle}
-                width={40}
-                height={40}
+                alt={src.technologyImageUrl}
+                width={30}
+                height={30}
+                className="w-[30px] h-[30px]"
               />
-              <span className="text-white">{src.technologyTitle}</span>
             </div>
           ))}
         </div>
         <Link
           target="_blank"
           href={githubLink}
-          className="flex items-center gap-1 cursor-pointer border-2 bg-[#a6e3a1] border-white rounded-full p-2 hover:bg-transparent hover:text-[#a6e3a1] hover:border-[#a6e3a1] transition-all ease-in-out duration-300 "
+          className="flex items-center mt-4 gap-1 cursor-pointer border-2 bg-[#a6e3a1] border-white rounded-full p-2 hover:bg-transparent hover:text-[#a6e3a1] hover:border-[#a6e3a1] transition-all ease-in-out duration-300 "
         >
           <Github className="w-6 h-6" />
-          <span className="text-xl">Github</span>
+          <span className="text-lg">Github</span>
         </Link>
       </div>
     </div>

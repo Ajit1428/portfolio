@@ -13,15 +13,15 @@ export default function Home() {
       <div className="border-b-2 border-[#a6e3a1]">
         <AboutMe />;
       </div>
-      <div className="border-b-2 border-[#a6e3a1]">
-        <ProjectsPage />;
-      </div>
-      <div className="border-b-2 border-[#a6e3a1]">
-        <ExperiencePage />;
-      </div>
-      <div className="border-b-2 border-[#a6e3a1]">
-        <ContactMePage />;
-      </div>
+      {/* <div className="border-b-2 border-[#a6e3a1]"> */}
+      {/*   <ProjectsPage />; */}
+      {/* </div> */}
+      {/* <div className="border-b-2 border-[#a6e3a1]"> */}
+      {/*   <ExperiencePage />; */}
+      {/* </div> */}
+      {/* <div className="border-b-2 border-[#a6e3a1]"> */}
+      {/*   <ContactMePage />; */}
+      {/* </div> */}
     </>
   );
 }

@@ -31,7 +31,7 @@ export const ExperiencePage = () => {
       className="active px-[10rem] h-auto py-[10rem]"
     >
       <section className="flex flex-col items-center justify-center gap-[6rem]">
-        <h2 className="text-[3rem] text-white">Experiences</h2>
+        <h2 className="text-[42px] text-white font-bold">Experiences</h2>
         <VerticalTimeline>
           <VerticalTimelineElement
             visible={true}

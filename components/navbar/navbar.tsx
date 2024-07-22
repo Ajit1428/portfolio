@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { SunMoon } from "lucide-react";
+import { Menu, SunMoon } from "lucide-react";
 import { navbarRoutes } from "@/utils/navbar/navbar-routes";
 import { cn } from "@/utils/cn";
 import { useActiveSection } from "@/hooks/useActiveSection";
@@ -11,16 +11,19 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 export const Navbar = () => {
   const { isActive, setIsActive } = useActiveSection();
   return (
-    <div className="z-[999] fixed top-0 w-full bg-[#1e1e2e] bg-opacity-80 backdrop-blur">
-      <nav className="flex items-center justify-between py-10 px-20">
+    <div className="z-[999] fixed top-0 w-screen bg-[#1e1e2e] bg-opacity-80 backdrop-blur">
+      <nav className="flex items-center p-6 justify-between xl:py-10 xl:px-20">
         <Image
           src="/images/logo.gif"
           alt="profile"
           width={40}
           height={40}
-          className="cursor-pointer"
+          className="cursor-pointer w-[40px] h-[40px]"
         />
-        <div className="flex gap-10 text-lg">
+        <div className="flex xl:hidden">
+          <Menu className="text-white h-8 w-8" />
+        </div>
+        <div className="hidden xl:flex gap-10 text-lg">
           {navbarRoutes.map((route) => (
             <Link
               key={route.hash}
@@ -40,7 +43,7 @@ export const Navbar = () => {
             </Link>
           ))}
         </div>
-        <SunMoon className="text-white w-8 h-8 cursor-pointer" />
+        <SunMoon className="hidden xl:flex text-white w-8 h-8 cursor-pointer" />
       </nav>
     </div>
   );

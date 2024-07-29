@@ -28,10 +28,12 @@ export const ExperiencePage = () => {
     <div
       id="experiences"
       ref={ref}
-      className="active px-[10rem] h-auto py-[10rem]"
+      className="active h-auto px-8 pt-[8rem] pb-10 xl:px-[10rem] xl:py-[10rem]"
     >
       <section className="flex flex-col items-center justify-center gap-[6rem]">
-        <h2 className="text-[42px] text-white font-bold">Experiences</h2>
+        <h2 className="text-white font-bold text-[32px] xl:text-[42px] ">
+          Experiences
+        </h2>
         <VerticalTimeline>
           <VerticalTimelineElement
             visible={true}
@@ -43,15 +45,20 @@ export const ExperiencePage = () => {
             }}
             contentArrowStyle={{ borderRight: "7px solid #fab387" }}
             date="July 2019 - Jun 2021"
-            dateClassName="!font-bold !text-[1.1rem] !text-white"
+            dateClassName="!font-bold !text-[14px] !italic xl:!text-[1.1rem] xl:!text-white"
             iconStyle={{ background: "#fab387", color: "black" }}
             icon={<Globe />}
           >
             <div>
-              <h2 className="!text-black !text-[1.4rem] mb-2 font-semibold">
-                Subisu Cablenet Limited
-              </h2>
-              <p className="!text-[1.1rem]">
+              <div className="flex flex-col -space-y-2">
+                <h2 className="!text-black mb-2 font-semibold !text-[18px] xl:!text-[1.4rem] ">
+                  Subisu Cablenet Limited
+                </h2>
+                <p className="!font-bold italic !text-[12px] xl:!text-[14px]">
+                  ** Technical Support Representative **
+                </p>
+              </div>
+              <p className="!text-[14px] xl:!text-[1.1rem]">
                 Subisu and wholly the team helped me build up my communication
                 as well as soft skills. Strengthen my networking and technical
                 knowledge. Understand how the organization functions in
@@ -69,15 +76,20 @@ export const ExperiencePage = () => {
             }}
             contentArrowStyle={{ borderRight: "7px solid #89dceb" }}
             date="Dec 2023 - Apr 2024"
-            dateClassName="!font-bold !text-[1.1rem] !text-white"
+            dateClassName="!font-bold !text-[14px] !italic xl:!text-[1.1rem] xl:!text-white"
             iconStyle={{ background: "#89dceb", color: "black" }}
             icon={<Landmark />}
           >
             <div>
-              <h2 className="!text-black !text-[1.4rem] mb-2 font-semibold">
-                K.B.L. Securities Limited
-              </h2>
-              <p className="!text-[1.1rem]">
+              <div className="flex flex-col -space-y-2">
+                <h2 className="!text-black mb-2 font-semibold !text-[18px] xl:!text-[1.4rem] ">
+                  K.B.L. Securities Limited
+                </h2>
+                <p className="!font-bold italic !text-[12px] xl:!text-[14px]">
+                  ** Assistant IT Officer **
+                </p>
+              </div>
+              <p className="!text-[14px] xl:!text-[1.1rem]">
                 Besides my expertise in software development, I got to explore
                 the field of brokerage. I experienced the thrills, met new
                 people having completely different mindset and learned about
@@ -96,15 +108,20 @@ export const ExperiencePage = () => {
             }}
             contentArrowStyle={{ borderRight: "7px solid #f38ba8" }}
             date="Apr 2024 - Present"
-            dateClassName="!font-bold !text-[1.1rem] !text-white"
+            dateClassName="!font-bold !text-[14px] !italic xl:!text-[1.1rem] xl:!text-white"
             iconStyle={{ background: "#f38ba8", color: "black" }}
             icon={<Terminal />}
           >
             <div>
-              <h2 className="!text-black !text-[1.4rem] mb-2 font-semibold">
-                Hamro Patro Inc.
-              </h2>
-              <p className="!text-[1.1rem]">
+              <div className="flex flex-col -space-y-2">
+                <h2 className="!text-black mb-2 font-semibold !text-[18px] xl:!text-[1.4rem] ">
+                  Hamro Patro Inc.
+                </h2>
+                <p className="!font-bold italic !text-[12px] xl:!text-[14px]">
+                  ** Associate Software Engineer **
+                </p>
+              </div>
+              <p className="!text-[14px] xl:!text-[1.1rem]">
                 Dedicated, focused and determined in becoming a Software
                 Engineer. Thriving in my chosen career path and following my
                 longed dream at Hamro Patro Inc.

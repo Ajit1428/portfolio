@@ -24,7 +24,7 @@ export const HomePage = () => {
     <div
       id="home"
       ref={ref}
-      className="w-screen flex items-center justify-center active mt-[8rem] px-10 pb-10 xl:pb-0 xl:h-screen xl:mt-[initial] xl:px-[208px] "
+      className="h-full w-full flex items-center justify-center active mt-[8rem] px-10 pb-10 xl:pb-0 xl:h-screen xl:mt-[initial] xl:px-[208px] "
     >
       <section className="flex flex-col items-center justify-center gap-20 xl:gap-[10rem] xl:flex-row">
         <div className="flex flex-col items-start text-white gap-4 max-w-[50rem]">

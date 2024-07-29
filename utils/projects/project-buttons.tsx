@@ -1,6 +1,6 @@
 export const ProjectButtons = [
   {
-    label: "All Projects",
+    label: "All",
   },
   {
     label: "Fullstack",

@@ -10,7 +10,7 @@ import { cn } from "@/utils/cn";
 import { ProjectSection } from "./project-section";
 
 export const ProjectsPage = () => {
-  const [isActiveButton, setIsActiveButton] = useState("All Projects");
+  const [isActiveButton, setIsActiveButton] = useState("All");
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
@@ -25,18 +25,20 @@ export const ProjectsPage = () => {
     <div
       id="projects"
       ref={ref}
-      className="h-auto active px-[159px] py-[10rem]"
+      className="h-auto w-full active px-4 pb-10 pt-[8rem] xl:px-[159px] xl:py-[10rem] "
     >
       <section className="flex flex-col">
-        <div className="flex flex-col items-center justify-center gap-[50px] ">
-          <h2 className="text-[42px] font-bold text-white">Projects</h2>
-          <div className="flex items-center gap-[59px]">
+        <div className="flex flex-col items-center justify-center gap-14 xl:gap-[50px] ">
+          <h2 className="text-[32px] font-bold text-white xl:text-[42px]">
+            Projects
+          </h2>
+          <div className="flex items-center gap-4 xl:gap-[59px]">
             {ProjectButtons.map((button) => (
               <button
                 key={button.label}
                 onClick={() => setIsActiveButton(button.label)}
                 className={cn(
-                  "border-2 border-[#a6e3a1] text-lg py-1 px-4 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-white/80  hover:bg-[#a6e3a1] hover:text-black",
+                  "border-2 border-[#a6e3a1] py-1 px-4 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-white/80  hover:bg-[#a6e3a1] hover:text-black xl:text-lg ",
                   isActiveButton === button.label &&
                     "bg-[#a6e3a1] text-black hover:bg-transparent hover:text-white/80 hover:border-white/80",
                 )}
@@ -46,9 +48,8 @@ export const ProjectsPage = () => {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-20 mt-24">
-          {(isActiveButton === "Fullstack" ||
-            isActiveButton === "All Projects") && (
+        <div className="grid mt-14 gap-14 xl:grid-cols-2 xl:gap-20 xl:mt-24">
+          {(isActiveButton === "Fullstack" || isActiveButton === "All") && (
             <>
               <ProjectSection
                 projectImageUrl="/images/projects/Ecommerce.png"
@@ -101,8 +102,7 @@ export const ProjectsPage = () => {
               />
             </>
           )}
-          {(isActiveButton === "All Projects" ||
-            isActiveButton === "Frontend") && (
+          {(isActiveButton === "All" || isActiveButton === "Frontend") && (
             <>
               <ProjectSection
                 projectImageUrl="/images/projects/MiniFood.png"
@@ -149,8 +149,7 @@ export const ProjectsPage = () => {
               />
             </>
           )}
-          {(isActiveButton === "All Projects" ||
-            isActiveButton === "Linux") && (
+          {(isActiveButton === "All" || isActiveButton === "Linux") && (
             <ProjectSection
               projectImageUrl="/images/projects/Linux-Rice.png"
               title="Arch-Hyprland"

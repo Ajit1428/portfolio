@@ -43,14 +43,14 @@ export const AboutMe = () => {
                 —- Who am I?
               </span>
             </h2>
-            <p className="text-[18px] text-wrap xl:text-[22px]">
-              I am currently working as an Intern at Hamro Patro Inc. I have a
-              keen interest in Fullstack development. My goal is to use my
-              expertise in building exciting and functional user interfaces.
-              Additionally, employ my analysis, modeling, and process automation
-              skills to engineer innovative, customizable, and sustainable
-              software solutions. The following are tech stacks that I use
-              regularly:
+            <p className="text-[16px] text-wrap xl:text-[22px]">
+              I am currently working as an Associate Software Engineer at Hamro
+              Patro Inc. I have a keen interest in Fullstack development. My
+              goal is to use my expertise in building exciting and functional
+              user interfaces. Additionally, employ my analysis, modeling, and
+              process automation skills to engineer innovative, customizable,
+              and sustainable software solutions. The following are tech stacks
+              that I use regularly:
             </p>
             <div className="grid grid-cols-4 items-center gap-4 xl:grid-cols-8">
               {SkillImages.map((skill) => (
@@ -65,7 +65,7 @@ export const AboutMe = () => {
                     height={40}
                     className="w-[40px] h-[40px]"
                   />
-                  <span className="text-[16px] text-center">
+                  <span className="text-[14px] xl:text-[16px] text-center">
                     {skill.skillTitle}
                   </span>
                 </div>

@@ -41,7 +41,7 @@ export const ExperiencePage = () => {
           <VerticalTimelineElement
             visible={true}
             contentStyle={{
-              padding: "0 10px",
+              padding: "0",
               background: "transparent",
               boxShadow: "none",
             }}
@@ -75,7 +75,7 @@ export const ExperiencePage = () => {
           <VerticalTimelineElement
             visible={true}
             contentStyle={{
-              padding: "0 10px",
+              padding: "0",
               background: "transparent",
               boxShadow: "none",
             }}
@@ -110,7 +110,7 @@ export const ExperiencePage = () => {
           <VerticalTimelineElement
             visible={true}
             contentStyle={{
-              padding: "0 10px",
+              padding: "0",
               background: "transparent",
               boxShadow: "none",
             }}

@@ -32,7 +32,7 @@ export const HomePage = () => {
           <h2 className="text-[30px] text-[#a6e3a1] border-dashed border-b-2 border-white mb-4 xl:text-[42px]">
             Software Engineer
           </h2>
-          <p className="text-[18px] text-wrap xl:text-[22px]">
+          <p className="text-[16px] text-wrap xl:text-[22px]">
             I specialize in crafting immersive user experiences using the latest
             frontend technologies and frameworks to bring your vision to life.
             Additionally, my expertise extends to backend technologies as well,
@@ -42,14 +42,14 @@ export const HomePage = () => {
           <div className="w-full flex items-center gap-6 mt-6 xl:gap-8">
             <a
               href="#contact"
-              className="cursor-pointer flex items-center gap-2 text-black text-[16px] bg-[#a6e3a1] border-2 p-2 rounded-xl shadow-lg  hover:bg-transparent hover:text-white/80 hover:border-2 hover:border-white/80 transition-all ease-in-out duration-300 xl:px-4 xl:py-2 xl:text-[22px]"
+              className="cursor-pointer flex items-center gap-2 text-black text-[14px] bg-[#a6e3a1] border-2 p-2 rounded-xl shadow-lg  hover:bg-transparent hover:text-white/80 hover:border-2 hover:border-white/80 transition-all ease-in-out duration-300 xl:px-4 xl:py-2 xl:text-[22px]"
             >
               <span>Get in touch</span>{" "}
               <Rss className="w-4 h-4 xl:w-6 xl:h-6" />
             </a>
             <div className="flex items-center gap-2 border-b-4 border-[#a6e3a1] py-2 w-fit">
               <span className="border border-white/20 rounded-full bg-green-400 p-[0.35rem]"></span>
-              <span className="text-[16px] xl:text-[22px]">Available now</span>
+              <span className="text-[14px] xl:text-[22px]">Available now</span>
             </div>
           </div>
         </div>

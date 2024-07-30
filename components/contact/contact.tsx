@@ -14,7 +14,7 @@ export const ContactMePage = () => {
 
   useEffect(() => {
     if (inView) {
-      setIsActive("Contact");
+      // setIsActive("Contact");
     }
   }, [inView, setIsActive]);
   return (

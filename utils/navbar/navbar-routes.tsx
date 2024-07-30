@@ -8,12 +8,12 @@ export const navbarRoutes = [
     hash: "#about",
   },
   {
-    label: "Projects",
-    hash: "#projects",
-  },
-  {
     label: "Experiences",
     hash: "#experiences",
+  },
+  {
+    label: "Projects",
+    hash: "#projects",
   },
   // {
   //   label: "Contact",

@@ -14,10 +14,10 @@ export default function Home() {
         <AboutMe />;
       </div>
       <div className="border-b-2 border-[#a6e3a1]">
-        <ProjectsPage />;
+        <ExperiencePage />;
       </div>
       <div className="border-b-2 border-[#a6e3a1]">
-        <ExperiencePage />;
+        <ProjectsPage />;
       </div>
       {/* <div className="border-b-2 border-[#a6e3a1]"> */}
       {/*   <ContactMePage />; */}

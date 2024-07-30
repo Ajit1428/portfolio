@@ -32,13 +32,13 @@ export const ProjectsPage = () => {
           <h2 className="text-[32px] font-bold text-white xl:text-[42px]">
             Projects
           </h2>
-          <div className="flex items-center gap-4 xl:gap-[40px]">
+          <div className="flex items-center gap-3 xl:gap-[40px]">
             {ProjectButtons.map((button) => (
               <button
                 key={button.label}
                 onClick={() => setIsActiveButton(button.label)}
                 className={cn(
-                  "border-2 border-[#a6e3a1] py-1 px-4 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-white/80  hover:bg-[#a6e3a1] hover:text-black xl:text-xl ",
+                  "border-2 border-[#a6e3a1] py-1 px-3 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-white/80  hover:bg-[#a6e3a1] hover:text-black xl:text-xl ",
                   isActiveButton === button.label &&
                     "bg-[#a6e3a1] text-black hover:bg-transparent hover:text-white/80 hover:border-white/80",
                 )}

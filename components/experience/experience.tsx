@@ -11,7 +11,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { Landmark, Globe, Terminal } from "lucide-react";
 
 export const ExperiencePage = () => {
   const { ref, inView } = useInView({
@@ -28,37 +27,44 @@ export const ExperiencePage = () => {
     <div
       id="experiences"
       ref={ref}
-      className="active h-auto px-8 pt-[8rem] pb-10 xl:px-[10rem] xl:py-[10rem]"
+      className="active h-auto px-8 pt-[6rem] pb-10 xl:px-[10rem] xl:py-[10rem]"
     >
-      <section className="flex flex-col items-center justify-center gap-[6rem]">
+      <section className="flex flex-col items-center justify-center gap-[4rem] xl:gap-[6rem]">
         <h2 className="text-white font-bold text-[32px] xl:text-[42px] ">
           Experiences
         </h2>
-        <VerticalTimeline>
+        <VerticalTimeline
+          lineColor="#a6e3a1"
+          layout="1-column"
+          className="!p-0"
+        >
           <VerticalTimelineElement
             visible={true}
             contentStyle={{
-              background: "#fab387",
-              color: "black",
-              boxShadow: "1px 2px 10px black",
-              textAlign: "left",
+              padding: "0 10px",
+              background: "transparent",
+              boxShadow: "none",
             }}
-            contentArrowStyle={{ borderRight: "7px solid #fab387" }}
+            contentArrowStyle={{ display: "none" }}
             date="July 2019 - Jun 2021"
-            dateClassName="!font-bold !text-[14px] !italic xl:!text-[1.1rem] xl:!text-white"
-            iconStyle={{ background: "#fab387", color: "black" }}
-            icon={<Globe />}
+            dateClassName="!font-bold !text-[14px] !italic !text-white xl:!text-[1.1rem] "
+            iconStyle={{
+              backgroundColor: "#a6e3a1",
+              height: "1.5rem",
+              width: "1.5rem",
+              marginLeft: "8px",
+            }}
           >
-            <div>
+            <div className="mb-8">
               <div className="flex flex-col -space-y-2">
-                <h2 className="!text-black mb-2 font-semibold !text-[18px] xl:!text-[1.4rem] ">
+                <h2 className="!text-[#a6e3a1] mb-2 font-semibold !text-[22px] xl:!text-[32px] ">
                   Subisu Cablenet Limited
                 </h2>
-                <p className="!font-bold italic !text-[12px] xl:!text-[14px]">
-                  ** Technical Support Representative **
+                <p className="flex gap-[4px] !font-bold text-white !text-[14px] xl:!text-[18px]">
+                  Technical Support Representative
                 </p>
               </div>
-              <p className="!text-[14px] xl:!text-[1.1rem]">
+              <p className="!text-[14px] xl:!text-[16px] text-white">
                 Subisu and wholly the team helped me build up my communication
                 as well as soft skills. Strengthen my networking and technical
                 knowledge. Understand how the organization functions in
@@ -69,27 +75,30 @@ export const ExperiencePage = () => {
           <VerticalTimelineElement
             visible={true}
             contentStyle={{
-              background: "#89dceb",
-              color: "black",
-              boxShadow: "1px 2px 10px black",
-              textAlign: "left",
+              padding: "0 10px",
+              background: "transparent",
+              boxShadow: "none",
             }}
-            contentArrowStyle={{ borderRight: "7px solid #89dceb" }}
+            contentArrowStyle={{ display: "none" }}
             date="Dec 2023 - Apr 2024"
-            dateClassName="!font-bold !text-[14px] !italic xl:!text-[1.1rem] xl:!text-white"
-            iconStyle={{ background: "#89dceb", color: "black" }}
-            icon={<Landmark />}
+            dateClassName="!font-bold !text-[14px] !italic !text-white xl:!text-[1.1rem] "
+            iconStyle={{
+              backgroundColor: "#a6e3a1",
+              height: "1.5rem",
+              width: "1.5rem",
+              marginLeft: "8px",
+            }}
           >
-            <div>
+            <div className="mb-8">
               <div className="flex flex-col -space-y-2">
-                <h2 className="!text-black mb-2 font-semibold !text-[18px] xl:!text-[1.4rem] ">
+                <h2 className="!text-[#a6e3a1] mb-2 font-semibold !text-[22px] xl:!text-[32px] ">
                   K.B.L. Securities Limited
                 </h2>
-                <p className="!font-bold italic !text-[12px] xl:!text-[14px]">
-                  ** Assistant IT Officer **
+                <p className="flex gap-[4px] !font-bold text-white !text-[13px] xl:!text-[18px]">
+                  Assistant IT Officer
                 </p>
               </div>
-              <p className="!text-[14px] xl:!text-[1.1rem]">
+              <p className="!text-[14px] xl:!text-[16px] text-white">
                 Besides my expertise in software development, I got to explore
                 the field of brokerage. I experienced the thrills, met new
                 people having completely different mindset and learned about
@@ -101,27 +110,30 @@ export const ExperiencePage = () => {
           <VerticalTimelineElement
             visible={true}
             contentStyle={{
-              background: "#f38ba8",
-              color: "black",
-              boxShadow: "1px 2px 10px black",
-              textAlign: "left",
+              padding: "0 10px",
+              background: "transparent",
+              boxShadow: "none",
             }}
-            contentArrowStyle={{ borderRight: "7px solid #f38ba8" }}
+            contentArrowStyle={{ display: "none" }}
             date="Apr 2024 - Present"
-            dateClassName="!font-bold !text-[14px] !italic xl:!text-[1.1rem] xl:!text-white"
-            iconStyle={{ background: "#f38ba8", color: "black" }}
-            icon={<Terminal />}
+            dateClassName="!font-bold !text-[14px] !italic !text-white xl:!text-[1.1rem] "
+            iconStyle={{
+              backgroundColor: "#a6e3a1",
+              height: "1.5rem",
+              width: "1.5rem",
+              marginLeft: "8px",
+            }}
           >
-            <div>
+            <div className="mb-8">
               <div className="flex flex-col -space-y-2">
-                <h2 className="!text-black mb-2 font-semibold !text-[18px] xl:!text-[1.4rem] ">
+                <h2 className="!text-[#a6e3a1] mb-2 font-semibold !text-[22px] xl:!text-[32px] ">
                   Hamro Patro Inc.
                 </h2>
-                <p className="!font-bold italic !text-[12px] xl:!text-[14px]">
-                  ** Associate Software Engineer **
+                <p className="flex gap-[4px] !font-bold text-white !text-[13px] xl:!text-[18px]">
+                  Associate Software Engineer
                 </p>
               </div>
-              <p className="!text-[14px] xl:!text-[1.1rem]">
+              <p className="!text-[14px] xl:!text-[16px] text-white">
                 Dedicated, focused and determined in becoming a Software
                 Engineer. Thriving in my chosen career path and following my
                 longed dream at Hamro Patro Inc.

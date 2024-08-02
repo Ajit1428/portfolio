@@ -50,9 +50,9 @@ export const ExperiencePage = () => {
             dateClassName="!font-bold !text-[14px] !italic !text-white xl:!text-[1.1rem] "
             iconStyle={{
               backgroundColor: "#a6e3a1",
-              height: "1.5rem",
-              width: "1.5rem",
-              marginLeft: "8px",
+              height: "1rem",
+              width: "1rem",
+              marginLeft: "12px",
             }}
           >
             <div className="mb-8">
@@ -84,9 +84,9 @@ export const ExperiencePage = () => {
             dateClassName="!font-bold !text-[14px] !italic !text-white xl:!text-[1.1rem] "
             iconStyle={{
               backgroundColor: "#a6e3a1",
-              height: "1.5rem",
-              width: "1.5rem",
-              marginLeft: "8px",
+              height: "1rem",
+              width: "1rem",
+              marginLeft: "12px",
             }}
           >
             <div className="mb-8">
@@ -119,9 +119,9 @@ export const ExperiencePage = () => {
             dateClassName="!font-bold !text-[14px] !italic !text-white xl:!text-[1.1rem] "
             iconStyle={{
               backgroundColor: "#a6e3a1",
-              height: "1.5rem",
-              width: "1.5rem",
-              marginLeft: "8px",
+              height: "1rem",
+              width: "1rem",
+              marginLeft: "12px",
             }}
           >
             <div className="mb-8">

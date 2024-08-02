@@ -12,16 +12,16 @@ export const Navbar = () => {
   const { isActive, setIsActive } = useActiveSection();
   return (
     <div className="z-[999] fixed top-0 w-screen bg-[#1e1e2e] bg-opacity-80 backdrop-blur">
-      <nav className="flex items-center p-6 justify-between xl:py-10 xl:px-20">
+      <nav className="flex items-center p-4 justify-between xl:py-8 xl:px-20">
         <Image
           src="/images/logo.gif"
           alt="profile"
           width={40}
           height={40}
-          className="cursor-pointer w-[40px] h-[40px]"
+          className="cursor-pointer w-[30px] h-[30px] xl:w-[40px] xl:h-[40px]"
         />
         <div className="flex xl:hidden">
-          <Menu className="text-white h-8 w-8" />
+          <Menu className="text-white h-[30px] w-[30px]" />
         </div>
         <div className="hidden xl:flex gap-10 text-lg">
           {navbarRoutes.map((route) => (

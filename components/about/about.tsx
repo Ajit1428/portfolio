@@ -65,7 +65,7 @@ export const AboutMe = () => {
                     height={40}
                     className="w-[40px] h-[40px]"
                   />
-                  <span className="text-[14px] xl:text-[16px] text-center">
+                  <span className="text-[12px] xl:text-[16px] text-center">
                     {skill.skillTitle}
                   </span>
                 </div>

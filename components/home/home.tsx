@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useActiveSection } from "@/hooks/useActiveSection";
 
 import { useInView } from "react-intersection-observer";
+import { ReactTyped } from "react-typed";
 
 export const HomePage = () => {
   const { ref, inView } = useInView({
@@ -27,11 +28,16 @@ export const HomePage = () => {
       className="h-full w-full flex items-center justify-center active mt-[8rem] px-8 pb-10 xl:pb-0 xl:h-screen xl:mt-[initial] xl:px-[208px] "
     >
       <section className="flex flex-col items-center justify-center gap-20 xl:gap-[10rem] xl:flex-row">
-        <div className="flex flex-col items-start text-white gap-4 max-w-[50rem]">
+        <div className="flex flex-col items-start gap-4 max-w-[50rem]">
           <span className="text-[22px] font-bold">Ajit Thapa</span>
-          <h2 className="text-[30px] text-[#a6e3a1] border-dashed border-b-2 border-white mb-4 xl:text-[42px]">
-            Software Engineer
-          </h2>
+          <div className="font-bold text-[32px] text-light-primary xl:text-[3rem] dark:text-dark-primary">
+            <ReactTyped
+              strings={["Software Engineer", "A Web Developer"]}
+              typeSpeed={100}
+              backSpeed={100}
+              loop
+            />
+          </div>
           <p className="text-[16px] text-wrap xl:text-[22px]">
             I specialize in crafting immersive user experiences using the latest
             frontend technologies and frameworks to bring your vision to life.
@@ -42,13 +48,13 @@ export const HomePage = () => {
           <div className="w-full flex items-center gap-6 mt-6 xl:gap-8">
             <a
               href="#contact"
-              className="cursor-pointer flex items-center gap-2 text-black text-[14px] bg-[#a6e3a1] border-2 p-2 rounded-xl shadow-lg  hover:bg-transparent hover:text-white/80 hover:border-2 hover:border-white/80 transition-all ease-in-out duration-300 xl:px-4 xl:py-2 xl:text-[22px]"
+              className="font-bold cursor-pointer flex items-center gap-2 text-[14px] border-2 p-2 rounded-xl shadow-lg hover:border-2 bg-light-primary text-white hover:bg-transparent hover:border-light-primary hover:text-light-primary transition-all ease-in-out duration-300 xl:px-4 xl:py-2 xl:text-[22px] dark:bg-dark-primary dark:hover:text-dark-primary dark:hover:border-dark-primary dark:hover:bg-transparent dark:text-black"
             >
               <span>Get in touch</span>{" "}
               <Rss className="w-4 h-4 xl:w-6 xl:h-6" />
             </a>
-            <div className="flex items-center gap-2 border-b-4 border-[#a6e3a1] py-2 w-fit">
-              <span className="border border-white/20 rounded-full bg-green-400 p-[0.35rem]"></span>
+            <div className="flex items-center gap-2 border-b-4 border-light-primary py-2 w-fit dark:border-dark-primary">
+              <span className="border border-white/20 rounded-full p-[0.35rem] bg-green-600 dark:bg-green-400 "></span>
               <span className="text-[14px] xl:text-[22px]">Available now</span>
             </div>
           </div>

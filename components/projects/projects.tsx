@@ -29,7 +29,7 @@ export const ProjectsPage = () => {
     >
       <section className="flex flex-col">
         <div className="flex flex-col items-center justify-center gap-14 xl:gap-[50px] ">
-          <h2 className="text-[32px] font-bold text-white xl:text-[42px]">
+          <h2 className="text-[32px] font-bold xl:text-[42px] dark:text-white ">
             Projects
           </h2>
           <div className="flex items-center gap-3 xl:gap-[40px]">
@@ -38,9 +38,9 @@ export const ProjectsPage = () => {
                 key={button.label}
                 onClick={() => setIsActiveButton(button.label)}
                 className={cn(
-                  "border-2 border-[#a6e3a1] text-[14px] py-1 px-3 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-white/80  hover:bg-[#a6e3a1] hover:text-black xl:text-xl ",
+                  "cursor-pointer font-semibold border-2 border-light-primary text-light-primary text-[14px] py-1 px-3 rounded-lg transition-all ease-in-out duration-300 bg-transparent hover:bg-light-primary hover:text-white xl:text-xl dark:border-dark-primary dark:text-dark-primary dark:hover:bg-dark-primary dark:hover:text-black",
                   isActiveButton === button.label &&
-                    "bg-[#a6e3a1] text-black hover:bg-transparent hover:text-white/80 hover:border-white/80",
+                    "bg-light-primary text-white hover:bg-transparent hover:border-light-primary hover:text-light-primary dark:bg-dark-primary dark:text-black dark:hover:bg-transparent dark:hover:text-dark-primary dark:hover:border-dark-primary",
                 )}
               >
                 {button.label}

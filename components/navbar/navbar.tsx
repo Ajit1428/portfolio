@@ -3,26 +3,26 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Menu, SunMoon } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { navbarRoutes } from "@/utils/navbar/navbar-routes";
 import { cn } from "@/utils/cn";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import { useTheme } from "next-themes";
 
 export const Navbar = () => {
   const { isActive, setIsActive } = useActiveSection();
+  const { setTheme, resolvedTheme } = useTheme();
+
   return (
-    <div className="z-[999] fixed top-0 w-screen bg-[#1e1e2e] bg-opacity-80 backdrop-blur">
-      <nav className="flex items-center p-4 justify-between xl:py-8 xl:px-20">
+    <div className="z-[999] fixed top-0 h-[5rem] w-screen bg-opacity-80 bg-white border-b border-light-primary backdrop-blur xl:h-[6rem] dark:bg-[#28283d] dark:bg-opacity-80 dark:border-dark-primary">
+      <nav className="flex items-center p-6 justify-between xl:py-6 xl:px-20">
         <Image
           src="/images/logo.gif"
           alt="profile"
-          width={40}
-          height={40}
+          width={"100"}
+          height={"100"}
           className="cursor-pointer w-[30px] h-[30px] xl:w-[40px] xl:h-[40px]"
         />
-        <div className="flex xl:hidden">
-          <Menu className="text-white h-[30px] w-[30px]" />
-        </div>
         <div className="hidden xl:flex gap-10 text-lg">
           {navbarRoutes.map((route) => (
             <Link
@@ -33,9 +33,9 @@ export const Navbar = () => {
             >
               <button
                 className={cn(
-                  "border-2 py-1 px-4 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-white/80 border-white/80 hover:bg-[#a6e3a1] hover:text-black",
+                  "font-bold border-2 py-1 px-4 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-light-primary border-light-primary hover:bg-light-primary hover:border-light-primary hover:text-white cursor-pointer dark:hover:bg-dark-primary dark:hover:text-black dark:text-dark-primary dark:border-dark-primary",
                   isActive === route.label &&
-                    "bg-[#a6e3a1] text-black hover:bg-transparent hover:text-white/80 hover:border-white/80",
+                    "bg-light-primary text-white border-light-primary hover:bg-transparent hover:border-light-primary hover:text-light-primary dark:text-black dark:hover:text-dark-primary dark:hover:bg-transparent dark:bg-dark-primary",
                 )}
               >
                 {route.label}
@@ -43,7 +43,15 @@ export const Navbar = () => {
             </Link>
           ))}
         </div>
-        <SunMoon className="hidden xl:flex text-white w-8 h-8 cursor-pointer" />
+        {resolvedTheme === "dark" ? (
+          <button onClick={() => setTheme("light")} className="cursor-pointer">
+            <Moon className="flex dark:text-dark-primary w-6 h-6 xl:w-8 xl:h-8" />
+          </button>
+        ) : (
+          <button onClick={() => setTheme("dark")} className="cursor-pointer">
+            <Sun className="flex text-sky-600 w-6 h=6 xl:w-8 xl:h-8" />
+          </button>
+        )}
       </nav>
     </div>
   );

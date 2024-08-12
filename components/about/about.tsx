@@ -26,7 +26,7 @@ export const AboutMe = () => {
       <div
         id="about"
         ref={ref}
-        className="h-full w-full flex items-center justify-center active mt-[6rem] px-10 pb-10 xl:pb-0 xl:h-screen xl:mt-[initial] xl:px-[208px] "
+        className="h-full w-full flex items-center justify-center active pt-[6rem] px-10 pb-10 xl:pb-0 xl:h-screen xl:px-[208px] "
       >
         <section className="flex flex-col-reverse items-center justify-center gap-20 xl:gap-[10rem] xl:flex-row">
           <Image
@@ -36,10 +36,10 @@ export const AboutMe = () => {
             width={508}
             height={555}
           />
-          <div className="flex flex-col items-start text-white gap-[1.4rem] group">
-            <h2 className="relative text-[30px] font-bold mb-4 xl:text-[42px]">
+          <div className="flex flex-col items-start gap-[1.4rem] dark:text-white group">
+            <h2 className="relative text-[30px] font-semibold mb-4 xl:text-[42px]">
               About Me
-              <span className="absolute text-[12px] font-semibold -bottom-3 left-[3.7rem] xl:left-[7.2rem]  w-full text-[#a6e3a1]">
+              <span className="absolute text-[12px] -bottom-3 left-[3.7rem] xl:text-[16px] xl:left-[5.5rem] w-full text-light-primary dark:text-dark-primary">
                 —- Who am I?
               </span>
             </h2>
@@ -76,7 +76,7 @@ export const AboutMe = () => {
               download
               className="w-full flex justify-center items-center xl:justify-normal"
             >
-              <span className="flex items-center gap-2 text-[#a6e3a1] text-[16px] transition-all ease-in-out duration-300 mt-4 border-2 border-[#a6e3a1] px-4 py-2  rounded-lg shadow-lg hover:bg-[#a6e3a1] hover:text-black cursor-pointer xl:text-[22px]">
+              <span className="font-semibold flex items-center gap-2 text-[16px] transition-all ease-in-out duration-300 mt-4 border-2 px-4 py-2 text-light-primary border-light-primary rounded-lg shadow-lg hover:bg-light-primary hover:text-white cursor-pointer xl:text-[22px] dark:text-dark-primary dark:border-dark-primary dark:hover:bg-dark-primary dark:hover:text-black">
                 <ArrowDownToLine className="w-6 h-6" /> Download CV
               </span>
             </a>

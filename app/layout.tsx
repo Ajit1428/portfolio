@@ -6,6 +6,7 @@ import { Navbar } from "@/components/navbar/navbar";
 import { SidebarNav } from "@/components/sidebar/sidebar";
 import { ActiveSectionContextProvider } from "@/hooks/useActiveSection";
 import { Footer } from "@/components/footer/footer";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
 
@@ -20,17 +21,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <link rel="icon" href="/images/portfolio.ico" />
       </head>
-      <body className={`${poppins.className} bg-[#1e1e2e] overflow-x-hidden`}>
-        <ActiveSectionContextProvider>
-          <Navbar />
-          <SidebarNav />
-          {children}
-          <Footer />
-        </ActiveSectionContextProvider>
+      <body className={`${poppins.className} overflow-x-hidden`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ActiveSectionContextProvider>
+            <Navbar />
+            <SidebarNav />
+            {children}
+            <Footer />
+          </ActiveSectionContextProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

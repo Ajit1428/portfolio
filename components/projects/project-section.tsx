@@ -21,7 +21,7 @@ export const ProjectSection = ({
   githubLink,
 }: ProjectSectionType) => {
   return (
-    <div className="flex flex-col w-fit gap-8 bg-[#26313F] border-[#26313F] shadow-lg shadow-black/40 rounded-lg hover:cursor-pointer hover:shadow-xl hover:scale-105 transition-all xl:w-[750px] xl:h-[830px] xl:gap-[25px]">
+    <div className="flex flex-col w-fit gap-8 bg-gray-800 border-2 border-light-primary shadow-lg shadow-light-primary hover:shadow-light-primary hover:shadow-xl rounded-lg hover:cursor-pointer hover:scale-105 transition-all ease-in-out xl:w-[750px] xl:h-[830px] xl:gap-[25px] dark:border-dark-primary dark:shadow-dark-primary">
       <Image
         src={projectImageUrl}
         alt="Project Screenshot"
@@ -30,13 +30,13 @@ export const ProjectSection = ({
         className="rounded-t-xl h-[200px] xl:h-[300px]"
       />
       <div className="flex flex-col items-center justify-center pb-8 px-10 gap-6 xl:gap-[30px] xl:px-20">
-        <h2 className="text-center text-[#a6e3a1] font-bold text-[32px] xl:text-[42px]">
+        <h2 className="text-center text-light-primary font-bold text-[32px] xl:text-[42px] dark:text-dark-primary ">
           {title}
         </h2>
         <p className="text-white text-center text-[16px] xl:text-start xl:text-[22px]">
           {description}
         </p>
-        <h4 className="text-center text-[#a6e3a1] font-semibold text-[20px] xl:text-[22px]">
+        <h4 className="text-center text-light-primary font-bold text-[20px] xl:text-[22px] dark:text-dark-primary">
           Technologies Used
         </h4>
         <div className="flex items-center gap-[25px] mt-4">
@@ -58,7 +58,7 @@ export const ProjectSection = ({
         <Link
           target="_blank"
           href={githubLink}
-          className="flex items-center mt-4 gap-1 cursor-pointer border-2 bg-[#a6e3a1] border-white rounded-full p-2 hover:bg-transparent hover:text-[#a6e3a1] hover:border-[#a6e3a1] transition-all ease-in-out duration-300 "
+          className="font-semibold flex items-center mt-4 gap-1 cursor-pointer border-2 rounded-full p-2 transition-all ease-in-out duration-300 bg-light-primary text-white border-light-primary hover:bg-transparent hover:border-light-primary hover:text-light-primary dark:bg-dark-primary dark:border-dark-primary dark:hover:text-dark-primary dark:hover:border-dark-primary dark:hover:bg-transparent dark:text-black"
         >
           <Github className="w-6 h-6" />
           <span className="text-[14px] xl:text-lg">Github</span>

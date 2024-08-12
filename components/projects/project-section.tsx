@@ -21,7 +21,7 @@ export const ProjectSection = ({
   githubLink,
 }: ProjectSectionType) => {
   return (
-    <div className="flex flex-col w-fit gap-8 bg-gray-800 border-2 border-light-primary shadow-lg shadow-light-primary hover:shadow-light-primary hover:shadow-xl rounded-lg hover:cursor-pointer hover:scale-105 transition-all ease-in-out xl:w-[750px] xl:h-[830px] xl:gap-[25px] dark:border-dark-primary dark:shadow-dark-primary">
+    <div className="flex flex-col w-fit gap-8 bg-gray-800 border-2 border-light-primary shadow-lg shadow-light-primary hover:shadow-light-primary hover:shadow-lg rounded-lg hover:cursor-pointer hover:scale-105 transition-all ease-in-out xl:w-[750px] xl:h-[830px] xl:gap-[25px] dark:border-dark-primary dark:shadow-dark-primary">
       <Image
         src={projectImageUrl}
         alt="Project Screenshot"

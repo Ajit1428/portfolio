@@ -9,16 +9,16 @@ export default function Home() {
   return (
     <>
       <div className="border-b-2 border-light-primary dark:border-dark-primary">
-        <HomePage />;
+        <HomePage />
       </div>
       <div className="border-b-2 border-light-primary dark:border-dark-primary">
-        <AboutMe />;
+        <AboutMe />
       </div>
       <div className="border-b-2 border-light-primary dark:border-dark-primary">
-        <ExperiencePage />;
+        <ExperiencePage />
       </div>
       <div className="border-b-2 border-light-primary dark:border-dark-primary">
-        <ProjectsPage />;
+        <ProjectsPage />
       </div>
       {/* <div className="border-b-2 border-light-primary dark:border-dark-primary"> */}
       {/*   <ContactMePage />; */}

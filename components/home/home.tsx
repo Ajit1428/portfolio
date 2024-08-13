@@ -29,7 +29,7 @@ export const HomePage = () => {
     >
       <section className="flex flex-col items-center justify-center gap-20 xl:gap-[10rem] xl:flex-row">
         <div className="flex flex-col items-start gap-4 max-w-[50rem]">
-          <div className="font-bold text-[30px] text-light-primary xl:text-[3rem] dark:text-dark-primary">
+          <div className="font-bold text-[28px] text-light-primary xl:text-[3rem] dark:text-dark-primary">
             <ReactTyped
               strings={[
                 "Hey, I'm Ajit Thapa.",
@@ -41,7 +41,7 @@ export const HomePage = () => {
               loop
             />
           </div>
-          <p className="text-[16px] text-wrap xl:text-[22px]">
+          <p className="text-[14px] text-wrap xl:text-[22px]">
             I specialize in crafting immersive user experiences using the latest
             frontend technologies and frameworks to bring your vision to life.
             Additionally, my expertise extends to backend technologies as well,

@@ -19,8 +19,8 @@ export const Navbar = () => {
         <Image
           src="/images/logo.gif"
           alt="profile"
-          width={"100"}
-          height={"100"}
+          width={0}
+          height={0}
           className="cursor-pointer w-[24px] h-[24px] xl:w-[40px] xl:h-[40px]"
         />
         <div className="hidden xl:flex gap-10 text-lg">

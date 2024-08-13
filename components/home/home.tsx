@@ -65,8 +65,8 @@ export const HomePage = () => {
         <Image
           src="/images/about.jpg"
           alt="About section image"
-          width={400}
-          height={400}
+          width={0}
+          height={0}
           className="rounded-full w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] xl:my-4"
         />
       </section>

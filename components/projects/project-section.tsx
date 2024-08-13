@@ -25,8 +25,8 @@ export const ProjectSection = ({
       <Image
         src={projectImageUrl}
         alt="Project Screenshot"
-        width={764}
-        height={300}
+        width={0}
+        height={0}
         className="rounded-t-xl h-[200px] xl:h-[300px]"
       />
       <div className="flex flex-col items-center justify-center pb-8 px-10 gap-6 xl:gap-[30px] xl:px-20">
@@ -48,9 +48,9 @@ export const ProjectSection = ({
               <Image
                 src={src.technologyImageUrl}
                 alt={src.technologyImageUrl}
-                width={30}
-                height={30}
-                className="w-[30px] h-[30px]"
+                width={0}
+                height={0}
+                className="h-[22px] w-[22px] xl:w-[30px] xl:h-[30px]"
               />
             </div>
           ))}

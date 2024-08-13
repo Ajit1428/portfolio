@@ -57,7 +57,7 @@ export const HomePage = () => {
               <Rss className="w-4 h-4 xl:w-6 xl:h-6" />
             </a>
             <div className="flex items-center gap-2 border-b-4 border-light-primary py-2 w-fit dark:border-dark-primary">
-              <span className="border border-white/20 rounded-full p-[0.35rem] bg-green-600 dark:bg-green-400 "></span>
+              <span className="border border-white/20 rounded-full p-[0.25rem] xl:p-[0.35rem] bg-green-600 dark:bg-green-400 "></span>
               <span className="text-[14px] xl:text-[22px]">Available now</span>
             </div>
           </div>

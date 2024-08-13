@@ -14,14 +14,14 @@ export const Navbar = () => {
   const { setTheme, resolvedTheme } = useTheme();
 
   return (
-    <div className="z-[999] fixed top-0 h-[5rem] w-screen bg-opacity-80 bg-white border-b border-light-primary backdrop-blur xl:h-[6rem] dark:bg-[#28283d] dark:bg-opacity-80 dark:border-dark-primary">
-      <nav className="flex items-center p-6 justify-between xl:py-6 xl:px-20">
+    <div className="z-[999] fixed top-0 h-[4rem] w-screen bg-opacity-80 bg-white border-b border-light-primary backdrop-blur xl:h-[6rem] dark:bg-[#28283d] dark:bg-opacity-80 dark:border-dark-primary">
+      <nav className="flex items-center p-4 justify-between xl:py-6 xl:px-20">
         <Image
           src="/images/logo.gif"
           alt="profile"
           width={"100"}
           height={"100"}
-          className="cursor-pointer w-[30px] h-[30px] xl:w-[40px] xl:h-[40px]"
+          className="cursor-pointer w-[24px] h-[24px] xl:w-[40px] xl:h-[40px]"
         />
         <div className="hidden xl:flex gap-10 text-lg">
           {navbarRoutes.map((route) => (

@@ -63,7 +63,7 @@ export const AboutMe = () => {
                     alt="Skills"
                     width={40}
                     height={40}
-                    className="w-[40px] h-[40px]"
+                    className="w-[30px] h-[30px] xl:w-[40px] xl:h-[40px]"
                   />
                   <span className="text-[12px] xl:text-[16px] text-center">
                     {skill.skillTitle}

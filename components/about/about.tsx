@@ -33,8 +33,8 @@ export const AboutMe = () => {
             className="rounded-lg w-[300px] h-[300px] xl:w-[608px] xl:h-[655px]"
             src="/images/about.jpg"
             alt="About section image"
-            width={0}
-            height={0}
+            width={608}
+            height={655}
           />
           <div className="flex flex-col items-start gap-[1.4rem] dark:text-white group">
             <h2 className="relative text-[30px] font-semibold mb-4 xl:text-[42px]">
@@ -61,8 +61,8 @@ export const AboutMe = () => {
                   <Image
                     src={skill.skillSrc}
                     alt="Skills"
-                    width={0}
-                    height={0}
+                    width={40}
+                    height={40}
                     className="w-[40px] h-[40px]"
                   />
                   <span className="text-[12px] xl:text-[16px] text-center">

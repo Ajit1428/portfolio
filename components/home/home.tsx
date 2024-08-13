@@ -29,7 +29,9 @@ export const HomePage = () => {
     >
       <section className="flex flex-col items-center justify-center gap-20 xl:gap-[10rem] xl:flex-row">
         <div className="flex flex-col items-start gap-4 max-w-[50rem]">
-          <span className="text-[22px] font-bold">Ajit Thapa</span>
+          <span className="text-[16px] font-bold xl:text-[22px]">
+            Ajit Thapa
+          </span>
           <div className="font-bold text-[30px] text-light-primary xl:text-[3rem] dark:text-dark-primary">
             <ReactTyped
               strings={["Software Engineer", "A Web Developer"]}

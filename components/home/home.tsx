@@ -25,7 +25,7 @@ export const HomePage = () => {
     <div
       id="home"
       ref={ref}
-      className="h-full w-full flex items-center justify-center active mt-[8rem] px-8 pb-10 xl:pb-0 xl:h-screen xl:mt-[initial] xl:px-[208px] "
+      className="h-full w-full flex items-center justify-center active pt-[8rem] px-8 pb-10 xl:pb-0 xl:pt-0 xl:h-screen xl:px-[208px] "
     >
       <section className="flex flex-col items-center justify-center gap-20 xl:gap-[10rem] xl:flex-row">
         <div className="flex flex-col items-start gap-4 max-w-[50rem]">
@@ -51,7 +51,7 @@ export const HomePage = () => {
           <div className="w-full flex items-center gap-6 mt-6 xl:gap-8">
             <a
               href="#contact"
-              className="font-bold cursor-pointer flex items-center gap-2 text-[14px] border-2 p-2 rounded-xl shadow-lg hover:border-2 bg-light-primary text-white hover:bg-transparent hover:border-light-primary hover:text-light-primary transition-all ease-in-out duration-300 xl:px-4 xl:py-2 xl:text-[22px] dark:bg-dark-primary dark:border-dark-primary dark:hover:text-dark-primary dark:hover:border-dark-primary dark:hover:bg-transparent dark:text-black"
+              className="font-bold cursor-pointer flex items-center gap-2 text-[14px] border-2 p-2 rounded-xl shadow-lg hover:border-2 bg-light-primary text-white hover:bg-transparent border-light-primary hover:text-light-primary transition-all ease-in-out duration-300 xl:px-4 xl:py-2 xl:text-[22px] dark:bg-dark-primary dark:border-dark-primary dark:hover:text-dark-primary dark:hover:bg-transparent dark:text-black"
             >
               <span>Get in touch</span>{" "}
               <Rss className="w-4 h-4 xl:w-6 xl:h-6" />

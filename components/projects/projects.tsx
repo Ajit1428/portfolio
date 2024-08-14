@@ -40,7 +40,7 @@ export const ProjectsPage = () => {
                 className={cn(
                   "cursor-pointer font-semibold border-2 border-light-primary text-light-primary text-[14px] py-1 px-3 rounded-lg transition-all ease-in-out duration-300 bg-transparent hover:bg-light-primary hover:text-white xl:text-xl dark:border-dark-primary dark:text-dark-primary dark:hover:bg-dark-primary dark:hover:text-black",
                   isActiveButton === button.label &&
-                    "bg-light-primary text-white hover:bg-transparent hover:border-light-primary hover:text-light-primary dark:bg-dark-primary dark:text-black dark:hover:bg-transparent dark:hover:text-dark-primary dark:hover:border-dark-primary",
+                    "bg-light-primary text-white hover:bg-transparent hover:text-light-primary dark:bg-dark-primary dark:text-black dark:hover:bg-transparent dark:hover:text-dark-primary",
                 )}
               >
                 {button.label}

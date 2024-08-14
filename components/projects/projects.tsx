@@ -25,7 +25,7 @@ export const ProjectsPage = () => {
     <div
       id="projects"
       ref={ref}
-      className="h-auto w-full active px-4 pb-10 pt-[6rem] xl:px-[159px] xl:py-[10rem] "
+      className="h-auto w-full active px-4 py-[6rem] xl:px-[20rem] xl:py-[10rem] "
     >
       <section className="flex flex-col">
         <div className="flex flex-col items-center justify-center gap-14 xl:gap-[50px] ">
@@ -48,7 +48,7 @@ export const ProjectsPage = () => {
             ))}
           </div>
         </div>
-        <div className="grid mt-14 gap-14 xl:grid-cols-2 xl:gap-20 xl:mt-24">
+        <div className="flex flex-col gap-14 xl:gap-20 pt-[6rem]">
           {(isActiveButton === "Fullstack" || isActiveButton === "All") && (
             <>
               <ProjectSection

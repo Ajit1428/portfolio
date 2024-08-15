@@ -10,8 +10,9 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 import { useTheme } from "next-themes";
 
 export const Navbar = () => {
-  const { isActive, setIsActive } = useActiveSection();
+  const { isActive } = useActiveSection();
   const { setTheme, resolvedTheme } = useTheme();
+  window.history.replaceState(null, "", `#${isActive}`.toLowerCase());
 
   return (
     <div className="z-[999] fixed top-0 h-[4rem] w-screen bg-opacity-80 bg-white border-b border-light-primary backdrop-blur xl:h-[6rem] dark:bg-[#28283d] dark:bg-opacity-80 dark:border-dark-primary">

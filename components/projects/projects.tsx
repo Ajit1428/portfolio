@@ -38,7 +38,7 @@ export const ProjectsPage = () => {
                 key={button.label}
                 onClick={() => setIsActiveButton(button.label)}
                 className={cn(
-                  "cursor-pointer font-semibold border-2 border-light-primary text-light-primary text-[14px] py-1 px-3 rounded-lg transition-all ease-in-out duration-300 bg-transparent hover:bg-light-primary hover:text-white xl:text-xl dark:border-dark-primary dark:text-dark-primary dark:hover:bg-dark-primary dark:hover:text-black",
+                  "cursor-pointer font-semibold border-2 border-light-primary text-light-primary text-[14px] py-1 px-4 rounded-tl-md rounded-bl-[24px] rounded-br-md rounded-tr-[24px] transition-all ease-in-out duration-300 bg-transparent hover:bg-light-primary hover:text-white xl:text-xl dark:border-dark-primary dark:text-dark-primary dark:hover:bg-dark-primary dark:hover:text-black",
                   isActiveButton === button.label &&
                     "bg-light-primary text-white hover:bg-transparent hover:text-light-primary dark:bg-dark-primary dark:text-black dark:hover:bg-transparent dark:hover:text-dark-primary",
                 )}

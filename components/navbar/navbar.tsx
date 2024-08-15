@@ -33,7 +33,7 @@ export const Navbar = () => {
             >
               <button
                 className={cn(
-                  "font-bold border-2 py-1 px-4 rounded-lg transition-all ease-in-out duration-300 bg-transparent text-light-primary border-light-primary hover:bg-light-primary hover:text-white cursor-pointer dark:hover:bg-dark-primary dark:hover:text-black dark:text-dark-primary dark:border-dark-primary",
+                  "font-bold border-2 py-1 px-4 rounded-bl-md rounded-tl-[24px] rounded-tr-md rounded-br-[24px] transition-all ease-in-out duration-300 bg-transparent text-light-primary border-light-primary hover:bg-light-primary hover:text-white cursor-pointer dark:hover:bg-dark-primary dark:hover:text-black dark:text-dark-primary dark:border-dark-primary",
                   isActive === route.label &&
                     "bg-light-primary text-white border-light-primary hover:bg-transparent hover:text-light-primary dark:text-black dark:hover:text-dark-primary dark:hover:bg-transparent dark:border-dark-primary dark:bg-dark-primary",
                 )}

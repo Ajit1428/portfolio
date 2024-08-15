@@ -58,10 +58,10 @@ export const ProjectSection = ({
         <Link
           target="_blank"
           href={githubLink}
-          className="font-semibold flex items-center mt-4 gap-1 cursor-pointer border-2 rounded-full p-2 transition-all ease-in-out duration-300 bg-light-primary text-white border-light-primary hover:bg-transparent hover:text-light-primary dark:bg-dark-primary dark:border-dark-primary dark:hover:text-dark-primary dark:hover:bg-transparent dark:text-black"
+          className="font-semibold flex items-center mt-4 gap-1 cursor-pointer border-2 rounded-tl-md rounded-bl-[24px] rounded-br-md rounded-t-[24px] px-4 py-1 transition-all ease-in-out duration-300 bg-light-primary text-white border-light-primary hover:bg-transparent hover:text-light-primary dark:bg-dark-primary dark:border-dark-primary dark:hover:text-dark-primary dark:hover:bg-transparent dark:text-black"
         >
-          <Github className="w-6 h-6" />
-          <span className="text-[14px] xl:text-lg">Github</span>
+          <Github className="w-4 h-4 xl:w-6 xl:h-6" />
+          <span className="text-[12px] xl:text-[18px]">Github</span>
         </Link>
       </div>
     </div>

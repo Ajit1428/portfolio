@@ -76,8 +76,9 @@ export const AboutMe = () => {
               download
               className="w-full flex justify-center items-center xl:justify-normal"
             >
-              <span className="font-semibold flex items-center gap-2 text-[16px] transition-all ease-in-out duration-300 mt-4 border-2 px-4 py-2 text-light-primary border-light-primary rounded-lg shadow-lg hover:bg-light-primary hover:text-white cursor-pointer xl:text-[22px] dark:text-dark-primary dark:border-dark-primary dark:hover:bg-dark-primary dark:hover:text-black">
-                <ArrowDownToLine className="w-6 h-6" /> Download CV
+              <span className="font-semibold flex items-center gap-2 text-[16px] transition-all ease-in-out duration-300 mt-4 border-2 px-4 py-1 text-light-primary border-light-primary rounded-tl-md rounded-bl-[24px] rounded-br-md rounded-tr-[24px] shadow-lg hover:bg-light-primary hover:text-white cursor-pointer xl:text-[22px] dark:text-dark-primary dark:border-dark-primary dark:hover:bg-dark-primary dark:hover:text-black">
+                <ArrowDownToLine className="w-4 h-4 xl:w-6 xl:h-6" /> Download
+                CV
               </span>
             </a>
           </div>

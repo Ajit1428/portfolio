@@ -16,15 +16,17 @@ export const Navbar = () => {
 
   return (
     <div className="z-[999] fixed top-0 h-[4rem] w-screen bg-opacity-80 bg-white border-b border-light-primary backdrop-blur xl:h-[6rem] dark:bg-[#28283d] dark:bg-opacity-80 dark:border-dark-primary">
-      <nav className="flex items-center p-4 justify-between xl:py-6 xl:px-20">
-        <Image
-          src="/images/logo.gif"
-          alt="profile"
-          width={40}
-          height={40}
-          className="cursor-pointer w-[24px] h-[24px] xl:w-[40px] xl:h-[40px]"
-        />
-        <div className="hidden xl:flex gap-10 text-lg">
+      <nav className="flex items-center p-4 justify-between xl:py-[30px] xl:px-20 2xl:py-6">
+        <a href="#home">
+          <Image
+            src="/images/logo.gif"
+            alt="profile"
+            width={40}
+            height={40}
+            className="cursor-pointer w-[24px] h-[24px] xl:w-[32px] xl:h-[32px] 2xl:w-[40px] 2xl:h-[40px]"
+          />
+        </a>
+        <div className="hidden xl:flex gap-10 xl:text-md 2xl:text-lg">
           {navbarRoutes.map((route) => (
             <Link
               key={route.hash}
@@ -49,7 +51,7 @@ export const Navbar = () => {
           </button>
         ) : (
           <button onClick={() => setTheme("dark")} className="cursor-pointer">
-            <Sun className="flex text-sky-600 w-6 h=6 xl:w-8 xl:h-8" />
+            <Sun className="flex text-sky-600 w-6 h-6 xl:w-8 xl:h-8" />
           </button>
         )}
       </nav>

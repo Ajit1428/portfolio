@@ -14,8 +14,8 @@ export const SidebarNav = () => {
   const { isActive } = useActiveSection();
   return (
     <>
-      <div className="hidden xl:flex  z-[999] fixed right-0 top-[30%]">
-        <div className="w-fit h-fit flex flex-col items-center bg-white gap-8 border-2 border-light-primary text-light-primary bg-opacity-80 backdrop-blur rounded-full p-[26px] dark:border-dark-primary dark:text-dark-primary dark:bg-[#28283d]">
+      <div className="hidden xl:flex z-[999] fixed right-0 top-[30%]">
+        <div className="w-fit h-fit flex flex-col items-center bg-white gap-8 border-2 border-light-primary text-light-primary bg-opacity-80 backdrop-blur rounded-full p-[20px] dark:border-dark-primary dark:text-dark-primary dark:bg-[#28283d]">
           <Link
             target="_blank"
             href="https://github.com/Ajit1428"

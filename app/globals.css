@@ -37,3 +37,7 @@
 .light {
   background-color: #fafafa;
 }
+
+.project-scroll-hidden {
+  scrollbar-width: none;
+}

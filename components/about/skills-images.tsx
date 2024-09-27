@@ -1,14 +1,5 @@
 export const SkillImages = [
   {
-    skillSrc: "/images/technologies/HTML5.png",
-    skillTitle: "HTML",
-  },
-  {
-    skillSrc: "/images/technologies/CSS3.png",
-    skillTitle: "CSS",
-  },
-
-  {
     skillSrc: "/images/technologies/React.png",
     skillTitle: "React",
   },
@@ -29,20 +20,12 @@ export const SkillImages = [
     skillTitle: "Typescript",
   },
   {
-    skillSrc: "/images/technologies/Clerk.png",
-    skillTitle: "Clerk",
-  },
-  {
     skillSrc: "/images/technologies/Tailwind CSS.png",
     skillTitle: "Tailwind CSS",
   },
   {
     skillSrc: "/images/technologies/Shadcn.svg",
     skillTitle: "Shadcn UI",
-  },
-  {
-    skillSrc: "/images/technologies/Material UI.png",
-    skillTitle: "Material UI",
   },
   {
     skillSrc: "/images/technologies/Node.js.png",

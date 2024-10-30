@@ -1,42 +1,38 @@
 export const SkillImages = [
   {
-    skillSrc: "/images/technologies/React.png",
+    skillSrc: "/images/technologies/react.png",
     skillTitle: "React",
   },
   {
-    skillSrc: "/images/technologies/Next.js.png",
+    skillSrc: "/images/technologies/next.js.png",
     skillTitle: "Next.js",
   },
   {
-    skillSrc: "/images/technologies/Svelte.png",
+    skillSrc: "/images/technologies/svelte.png",
     skillTitle: "Svelte",
   },
   {
-    skillSrc: "/images/technologies/JS.png",
+    skillSrc: "/images/technologies/javascript.png",
     skillTitle: "Javascript",
   },
   {
-    skillSrc: "/images/technologies/Typescript.png",
+    skillSrc: "/images/technologies/typescript.png",
     skillTitle: "Typescript",
   },
   {
-    skillSrc: "/images/technologies/Tailwind CSS.png",
+    skillSrc: "/images/technologies/tailwindcss.png",
     skillTitle: "Tailwind CSS",
   },
   {
-    skillSrc: "/images/technologies/Shadcn.svg",
+    skillSrc: "/images/technologies/shadcn.svg",
     skillTitle: "Shadcn UI",
   },
   {
-    skillSrc: "/images/technologies/Node.js.png",
+    skillSrc: "/images/technologies/node.js.png",
     skillTitle: "Node.js",
   },
   {
-    skillSrc: "/images/technologies/MongoDB.png",
+    skillSrc: "/images/technologies/mongoDB.png",
     skillTitle: "MongoDB",
-  },
-  {
-    skillSrc: "/images/technologies/Linux.png",
-    skillTitle: "Linux",
   },
 ] as const;

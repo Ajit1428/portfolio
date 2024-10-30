@@ -29,10 +29,10 @@ export const ExperiencePage = () => {
     <div
       id="experiences"
       ref={ref}
-      className="active h-auto px-8 pt-[6rem] pb-10 md:px-[5rem] xl:px-[10rem] xl:py-[10rem]"
+      className="active h-auto px-8 pb-10 pt-24 md:px-20 xl:p-40"
     >
-      <section className="flex flex-col items-center justify-center gap-[4rem] xl:gap-[6rem]">
-        <h2 className="font-bold text-[32px] xl:text-[32px] 2xl:text-[42px] dark:text-white">
+      <section className="flex flex-col items-center justify-center gap-16 xl:gap-24">
+        <h2 className="text-[32px] font-bold dark:text-white xl:text-[32px] 2xl:text-[42px]">
           Experiences
         </h2>
         <VerticalTimeline
@@ -59,14 +59,14 @@ export const ExperiencePage = () => {
           >
             <div className="mb-8">
               <div className="flex flex-col -space-y-2">
-                <h2 className="!text-light-primary mb-2 font-semibold !text-[22px] xl:!text-[26px] 2xl:!text-[32px] dark:!text-dark-primary">
+                <h2 className="mb-2 !text-[22px] font-semibold !text-light-primary dark:!text-dark-primary xl:!text-[26px] 2xl:!text-[32px]">
                   Subisu Cablenet Limited
                 </h2>
-                <p className="flex gap-[4px] !font-bold !text-[14px] xl:!text-[16px] 2xl:!text-[18px] dark:text-white ">
+                <p className="flex gap-[4px] !text-[14px] !font-bold dark:text-white xl:!text-[16px] 2xl:!text-[18px] ">
                   Technical Support Representative
                 </p>
               </div>
-              <p className="!text-[14px] 2xl:!text-[16px] dark:text-white">
+              <p className="!text-[14px] dark:text-white 2xl:!text-[16px]">
                 Subisu and wholly the team helped me build up my communication
                 as well as soft skills. Strengthen my networking and technical
                 knowledge. Understand how the organization functions in
@@ -93,14 +93,14 @@ export const ExperiencePage = () => {
           >
             <div className="mb-8">
               <div className="flex flex-col -space-y-2">
-                <h2 className="!text-light-primary mb-2 font-semibold !text-[22px] xl:!text-[26px] 2xl:!text-[32px] dark:!text-dark-primary">
+                <h2 className="mb-2 !text-[22px] font-semibold !text-light-primary dark:!text-dark-primary xl:!text-[26px] 2xl:!text-[32px]">
                   K.B.L. Securities Limited
                 </h2>
-                <p className="flex gap-[4px] !font-bold !text-[14px] xl:!text-[16px] 2xl:!text-[18px] dark:text-white ">
+                <p className="flex gap-[4px] !text-[14px] !font-bold dark:text-white xl:!text-[16px] 2xl:!text-[18px] ">
                   Assistant IT Officer
                 </p>
               </div>
-              <p className="!text-[14px] 2xl:!text-[16px] dark:text-white">
+              <p className="!text-[14px] dark:text-white 2xl:!text-[16px]">
                 Besides my expertise in software development, I got to explore
                 the field of brokerage. I experienced the thrills, met new
                 people having completely different mindset and learned about
@@ -128,14 +128,14 @@ export const ExperiencePage = () => {
           >
             <div className="mb-8">
               <div className="flex flex-col -space-y-2">
-                <h2 className="!text-light-primary mb-2 font-semibold !text-[22px] xl:!text-[26px] 2xl:!text-[32px] dark:!text-dark-primary">
+                <h2 className="mb-2 !text-[22px] font-semibold !text-light-primary dark:!text-dark-primary xl:!text-[26px] 2xl:!text-[32px]">
                   Hamro Patro Inc.
                 </h2>
-                <p className="flex gap-[4px] !font-bold !text-[14px] xl:!text-[16px] 2xl:!text-[18px] dark:text-white ">
+                <p className="flex gap-[4px] !text-[14px] !font-bold dark:text-white xl:!text-[16px] 2xl:!text-[18px] ">
                   Associate Software Engineer
                 </p>
               </div>
-              <p className="!text-[14px] 2xl:!text-[16px] dark:text-white">
+              <p className="!text-[14px] dark:text-white 2xl:!text-[16px]">
                 Dedicated, focused and determined in becoming a Software
                 Engineer. Thriving in my chosen career path and following my
                 longed dream at Hamro Patro Inc.

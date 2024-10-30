@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, Github } from "lucide-react";
+import { ChevronLeft, ChevronRight, Github, Globe } from "lucide-react";
 import { useRef, useState, useEffect, MouseEvent } from "react";
 import { allProjectLists } from "@/utils/projects/static-project-list";
 import { cn } from "@/utils/cn";
+import { ProjectType } from "@/utils/types";
 
 export const ProjectSection = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -58,34 +59,34 @@ export const ProjectSection = () => {
   }, [elem, diff1]);
 
   return (
-    <div className="w-full relative">
+    <div className="relative w-full">
       <div
-        className="flex flex-col overflow-hidden md:flex-row md:overflow-x-auto md:overflow-y-hidden gap-10 project-scroll-hidden"
+        className="project-scroll-hidden flex flex-col gap-16 overflow-hidden md:h-[900px] md:flex-row md:overflow-x-auto md:overflow-y-hidden"
         ref={sliderRef}
       >
-        {allProjectLists.map((project) => (
+        {allProjectLists.map((project: ProjectType) => (
           <div
             key={project.githubLink}
-            className={`flex flex-col gap-4 bg-slate-200 rounded-2xl border-2 border-light-primary/30 shadow-sm shadow-light-primary overflow-hidden hover:cursor-pointer transition-all ease-in-out group max-w-[500px] pb-6 md:pb-0 md:w-full md:min-w-[500px] xl:gap-[25px] xl:h-[50rem] xl:min-w-[600px] dark:border-dark-primary/30 dark:shadow-dark-primary dark:bg-gray-700 hover:scale-105`}
+            className={`group mt-10 flex h-[37rem] max-w-[500px] flex-col gap-4 overflow-hidden rounded-2xl border border-light-primary/30 bg-slate-200 pb-6 shadow-sm shadow-light-primary transition-all duration-200 ease-in-out hover:cursor-pointer dark:border-dark-primary/30 dark:bg-gray-700 dark:shadow-dark-primary md:h-[42rem] md:w-full md:min-w-[500px] md:pb-0 md:hover:scale-110 xl:h-[50rem] xl:min-w-[600px] xl:gap-[25px]`}
           >
             <Image
               src={project?.projectImageUrl}
               alt="Project Screenshot"
               width={600}
               height={600}
-              className="rounded-t-2xl w-full h-full md:w-[500px] md:h-[250px] xl:w-[600px] xl:h-[300px] xl:top-16 object-fit transition-all ease-in-out"
+              className="object-fit h-[200px] w-full rounded-t-2xl transition-all ease-in-out md:h-[250px] md:w-[500px] xl:top-16 xl:h-[300px] xl:w-[600px]"
             />
-            <div className="flex flex-col items-center gap-6 p-6 xl:px-10 xl:py-8 xl:gap-6">
-              <h2 className="text-light-primary font-bold text-[28px] md:text-[32px] 2xl:text-[42px] dark:text-dark-primary ">
+            <div className="flex flex-col items-center gap-6 p-6 xl:gap-6 xl:px-10 xl:py-8">
+              <h2 className="text-[28px] font-bold text-light-primary dark:text-dark-primary md:text-[32px] 2xl:text-[42px] ">
                 {project?.title}
               </h2>
-              <p className="text-[12px] md:text-[16px] xl:text-start 2xl:text-[18px] dark:text-white">
+              <p className="text-[12px] dark:text-white md:text-[16px] xl:text-start 2xl:text-[18px]">
                 {project?.description}
               </p>
-              <h4 className="text-center text-light-primary font-bold text-[18px] md:text-[20px] dark:text-dark-primary mt-4">
+              <h4 className="mt-4 text-center text-[18px] font-bold text-light-primary dark:text-dark-primary md:text-[20px]">
                 Technologies Used
               </h4>
-              <div className="flex justify-center items-center gap-[25px]">
+              <div className="flex items-center justify-center gap-[25px]">
                 {project?.technologies.map((src) => (
                   <div
                     key={src.technologyImageUrl}
@@ -96,20 +97,34 @@ export const ProjectSection = () => {
                       alt={src.technologyImageUrl}
                       width={30}
                       height={30}
-                      className="h-[22px] w-[22px] lg:w-[30px] lg:h-[30px]"
+                      className="size-[22px] lg:size-[30px]"
                     />
                   </div>
                 ))}
               </div>
               <Link
                 target="_blank"
-                href={project.githubLink}
-                className="w-fit font-semibold flex items-center mx-auto mt-4 gap-1 cursor-pointer border-2 rounded-tl-md rounded-bl-[24px] rounded-br-md rounded-t-[24px] px-4 py-1 transition-all ease-in-out duration-300 bg-light-primary text-white border-light-primary hover:bg-transparent hover:text-light-primary dark:bg-dark-primary dark:border-dark-primary dark:hover:text-dark-primary dark:hover:bg-transparent dark:text-black"
+                href={
+                  project.githubLink ? project.githubLink : project.websiteLink
+                }
+                className="mx-auto mt-4 flex w-fit cursor-pointer items-center gap-[0.3rem] rounded-t-[24px] rounded-bl-[24px] rounded-br-md rounded-tl-md border-2 border-light-primary bg-light-primary px-4 py-1 font-semibold text-white transition-all duration-300 ease-in-out hover:bg-transparent hover:text-light-primary dark:border-dark-primary dark:bg-dark-primary dark:text-black dark:hover:bg-transparent dark:hover:text-dark-primary"
               >
-                <Github className="w-4 h-4 lg:w-6 xl:h-6" />
-                <span className="text-[14px] lg:text-[16px] 2xl:text-[18px]">
-                  Github
-                </span>
+                {project.githubLink !== "" && (
+                  <>
+                    <Github className="size-4 lg:w-[1.4rem] xl:h-[1.4rem]" />
+                    <span className="text-[14px] lg:text-[16px] 2xl:text-[18px]">
+                      Github
+                    </span>
+                  </>
+                )}
+                {project.websiteLink !== "" && (
+                  <>
+                    <Globe className="size-4 lg:w-[1.4rem] xl:h-[1.4rem]" />
+                    <span className="text-[14px] lg:text-[16px] 2xl:text-[18px]">
+                      Website
+                    </span>
+                  </>
+                )}
               </Link>
             </div>
           </div>
@@ -126,7 +141,7 @@ export const ProjectSection = () => {
             clearInterval(timerId?.current!);
           }}
         >
-          <ChevronLeft className="w-4 h-4 md:w-6 md:h-6" />
+          <ChevronLeft className="size-4 md:size-6" />
         </button>
         <button
           className={cn(
@@ -138,7 +153,7 @@ export const ProjectSection = () => {
             clearInterval(timerId?.current!);
           }}
         >
-          <ChevronRight className="w-4 h-4 md:w-6 md:h-6" />
+          <ChevronRight className="size-4 md:size-6" />
         </button>
       </div>
     </div>

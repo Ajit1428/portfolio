@@ -26,24 +26,24 @@ export const AboutMe = () => {
       <div
         id="about"
         ref={ref}
-        className="h-full w-full flex items-center justify-center active pt-[6rem] px-10 pb-32 md:px-[120px] xl:h-screen xl:pb-0 2xl:px-[150px]"
+        className="active flex size-full items-center justify-center px-10 pb-32 pt-24 md:px-[120px] xl:h-screen xl:pb-0 2xl:px-[150px]"
       >
-        <section className="flex flex-col-reverse items-center justify-center gap-20 xl:gap-[4rem] xl:flex-row 2xl:gap-[6rem]">
+        <section className="flex flex-col-reverse items-center justify-center gap-20 xl:flex-row xl:gap-16 2xl:gap-24">
           <Image
-            className="rounded-lg w-[300px] h-[300px] md:w-[480px] md:h-[480px] xl:h-[520px] xl:w-[520px] 2xl:w-[600px] 2xl:h-[600px]"
+            className="size-[300px] rounded-lg md:size-[480px] xl:size-[520px] 2xl:size-[600px]"
             src="/images/about.jpg"
             alt="About section image"
             width={608}
             height={655}
           />
-          <div className="flex flex-col items-start gap-[1.4rem] dark:text-white group">
-            <h2 className="relative text-[30px] font-semibold mb-4 md:text-[34px] 2xl:text-[42px]">
+          <div className="group flex flex-col items-start gap-[1.4rem] dark:text-white">
+            <h2 className="relative mb-4 text-[30px] font-semibold md:text-[34px] 2xl:text-[42px]">
               About Me
-              <span className="absolute text-[12px] -bottom-3 left-[3.7rem] md:left-[4rem] md:text-[14px] 2xl:text-[16px] 2xl:left-[5.5rem] w-full text-light-primary dark:text-dark-primary">
+              <span className="absolute -bottom-3 left-[3.7rem] w-full text-[12px] text-light-primary dark:text-dark-primary md:left-16 md:text-[14px] 2xl:left-[5.5rem] 2xl:text-[16px]">
                 —- Who am I?
               </span>
             </h2>
-            <p className="text-[16px] text-wrap md:text-[18px] 2xl:text-[22px]">
+            <p className="text-wrap text-[16px] md:text-[18px] 2xl:text-[22px]">
               I am currently working as an Associate Software Engineer at Hamro
               Patro Inc. My goal is to use my expertise in building exciting and
               functional user interfaces. The following are tech stacks that I
@@ -60,9 +60,9 @@ export const AboutMe = () => {
                     alt="Skills"
                     width={40}
                     height={40}
-                    className="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] 2xl:w-[40px] 2xl:h-[40px]"
+                    className="size-[30px] xl:size-[35px] 2xl:size-[40px]"
                   />
-                  <span className="text-[12px] md:text-[14px] 2xl:text-[16px] text-center">
+                  <span className="text-center text-[12px] md:text-[14px] 2xl:text-[16px]">
                     {skill.skillTitle}
                   </span>
                 </div>
@@ -71,11 +71,10 @@ export const AboutMe = () => {
             <a
               href="/CV.pdf"
               download
-              className="w-full flex justify-center items-center xl:justify-normal"
+              className="flex w-full items-center justify-center xl:justify-normal"
             >
-              <span className="font-semibold flex items-center gap-2 text-[16px] transition-all ease-in-out duration-300 mt-4 border-2 px-4 py-1 text-light-primary border-light-primary rounded-tl-md rounded-bl-[24px] rounded-br-md rounded-tr-[24px] shadow-lg hover:bg-light-primary hover:text-white cursor-pointer xl:text-[18px] 2xl:text-[22px] dark:text-dark-primary dark:border-dark-primary dark:hover:bg-dark-primary dark:hover:text-black">
-                <ArrowDownToLine className="w-4 h-4 xl:w-6 xl:h-6" /> Download
-                CV
+              <span className="mt-4 flex cursor-pointer items-center gap-2 rounded-bl-[24px] rounded-br-md rounded-tl-md rounded-tr-[24px] border-2 border-light-primary px-4 py-1 text-[16px] font-semibold text-light-primary shadow-lg transition-all duration-300 ease-in-out hover:bg-light-primary hover:text-white dark:border-dark-primary dark:text-dark-primary dark:hover:bg-dark-primary dark:hover:text-black xl:text-[18px] 2xl:text-[22px]">
+                <ArrowDownToLine className="size-4 xl:size-6" /> Download CV
               </span>
             </a>
           </div>

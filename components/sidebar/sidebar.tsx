@@ -14,44 +14,44 @@ export const SidebarNav = () => {
   const { isActive } = useActiveSection();
   return (
     <>
-      <div className="hidden xl:flex z-[999] fixed right-0 top-[30%]">
-        <div className="w-fit h-fit flex flex-col items-center bg-white gap-8 border-2 border-light-primary text-light-primary bg-opacity-80 backdrop-blur rounded-full p-[20px] dark:border-dark-primary dark:text-dark-primary dark:bg-[#28283d]">
+      <div className="fixed right-0 top-[30%] z-[999] hidden xl:flex">
+        <div className="flex size-fit flex-col items-center gap-8 rounded-full border-2 border-light-primary bg-white bg-opacity-80 p-[20px] text-light-primary backdrop-blur dark:border-dark-primary dark:bg-[#28283d] dark:text-dark-primary">
           <Link
             target="_blank"
             href="https://github.com/Ajit1428"
-            className="p-[12px] hover:rounded-full hover:text-white hover:bg-light-primary cursor-pointer transition-all ease-in-out dark:hover:text-black dark:hover:bg-dark-primary"
+            className="cursor-pointer p-[12px] transition-all ease-in-out hover:rounded-full hover:bg-light-primary hover:text-white dark:hover:bg-dark-primary dark:hover:text-black"
           >
-            <Github className="w-8 h-8" />
+            <Github className="size-8" />
           </Link>
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/ajit-thapa-a65158242"
-            className="p-[12px] hover:rounded-full hover:text-white hover:bg-light-primary cursor-pointer transition-all ease-in-out dark:hover:text-black dark:hover:bg-dark-primary"
+            className="cursor-pointer p-[12px] transition-all ease-in-out hover:rounded-full hover:bg-light-primary hover:text-white dark:hover:bg-dark-primary dark:hover:text-black"
           >
-            <Linkedin className="w-8 h-8" />
+            <Linkedin className="size-8" />
           </Link>
           <Link
             target="_blank"
             href="https://www.facebook.com/ajit.thapa.161/"
-            className="p-[12px] hover:rounded-full hover:text-white hover:bg-light-primary cursor-pointer transition-all ease-in-out dark:hover:text-black dark:hover:bg-dark-primary"
+            className="cursor-pointer p-[12px] transition-all ease-in-out hover:rounded-full hover:bg-light-primary hover:text-white dark:hover:bg-dark-primary dark:hover:text-black"
           >
-            <Facebook className="w-8 h-8" />
+            <Facebook className="size-8" />
           </Link>
           <Link
             target="_blank"
             href="https://www.instagram.com/ajit_thapa91?igsh=ZG8wbzVyMGY0Z2ll"
-            className="p-[12px] hover:rounded-full hover:text-white hover:bg-light-primary cursor-pointer transition-all ease-in-out dark:hover:text-black dark:hover:bg-dark-primary"
+            className="cursor-pointer p-[12px] transition-all ease-in-out hover:rounded-full hover:bg-light-primary hover:text-white dark:hover:bg-dark-primary dark:hover:text-black"
           >
-            <Instagram className="w-8 h-8" />
+            <Instagram className="size-8" />
           </Link>
         </div>
       </div>
       {isActive === "Projects" && (
         <Link
           href="#home"
-          className="fixed z-[999] right-2 bottom-[4.2rem] p-[4px] text-white border-2 border-light-primary bg-light-primary transition-all ease-in-out hover:bg-transparent hover:border-light-primary hover:text-light-primary rounded-md cursor-pointer xl:right-10 xl:bottom-10 xl:px-[6px] xl:py-[4px] dark:text-black/80 dark:bg-dark-primary dark:border-dark-primary dark:hover:bg-transparent dark:hover:text-dark-primary "
+          className="fixed bottom-[4.2rem] right-2 z-[999] cursor-pointer rounded-md border-2 border-light-primary bg-light-primary p-[4px] text-white transition-all ease-in-out hover:border-light-primary hover:bg-transparent hover:text-light-primary dark:border-dark-primary dark:bg-dark-primary dark:text-black/80 dark:hover:bg-transparent dark:hover:text-dark-primary xl:bottom-16 xl:right-10 xl:px-[6px] xl:py-[4px] "
         >
-          <ArrowBigUpDash className="w-6 h-6 xl:w-8 xl:h-8" />
+          <ArrowBigUpDash className="size-6 xl:size-8" />
         </Link>
       )}
     </>
